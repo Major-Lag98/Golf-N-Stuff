@@ -9,11 +9,16 @@ public class GameStateMachine : MonoBehaviour
 
     public Rigidbody GolfBall;
 
+    public float yPosition;
+
     public float WaitIdleTimeMax;
     float WaitIdleTime = 0;
 
     public float MinSpeed;
 
+    public int MinYValue;
+
+    private Vector3 lastPos;
     public enum GameState
     {
         AIMIMG,
@@ -42,6 +47,12 @@ public class GameStateMachine : MonoBehaviour
                 break;
 
             case (GameState.WAITING):
+                // ball is below a certin vertical height aka out of bounds, reset to previous putt
+                if (GolfBall.transform.position.y <  MinYValue)
+                {
+                    ResetGolfBallVelocity();
+                    GolfBall.transform.position = lastPos;
+                }
                 // look to see if golfball velocity is below a certain threshhold
                 if (GolfBall.velocity.magnitude < MinSpeed)
                 {
@@ -92,7 +103,9 @@ public class GameStateMachine : MonoBehaviour
 
     // set up aiming game state
     public void ToAiming()
-    {
+    {   
+        // record the last position of the golf ball 
+        lastPos = GolfBall.transform.position;
 
         // Enable the aiming line renderer
         CameraObject.EnableAimLine();
@@ -103,8 +116,8 @@ public class GameStateMachine : MonoBehaviour
         // Dsiable putter if not already
         PutterObject.DisablePutter();
 
-        GolfBall.velocity = Vector3.zero;
-        GolfBall.angularVelocity = Vector3.zero;
+        
+        ResetGolfBallVelocity();
 
     }
 
@@ -141,4 +154,14 @@ public class GameStateMachine : MonoBehaviour
         WaitIdleTime = 0;
     }
 
+
+    void ResetGolfBallVelocity()
+    {
+        // set velocity to 0
+        GolfBall.velocity = Vector3.zero;
+
+        // set angular velocity to 0
+        GolfBall.angularVelocity = Vector3.zero;
+
+    }
 }
