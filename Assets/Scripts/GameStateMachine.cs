@@ -18,6 +18,10 @@ public class GameStateMachine : MonoBehaviour
 
     public int MinYValue;
 
+    public float WinYValue;
+
+    [SerializeField] private AudioSource hitSoundEffect;
+
     private Vector3 lastPos;
     public enum GameState
     {
@@ -32,7 +36,7 @@ public class GameStateMachine : MonoBehaviour
     {
         // start the game in aiming
         ChangeState(GameState.AIMIMG);
-    }
+    } 
 
     // Update is called once per frame
     void Update()
@@ -41,6 +45,11 @@ public class GameStateMachine : MonoBehaviour
         switch (currentState)
         {
             case (GameState.AIMIMG):
+                // Check if ball is at the bottom of the hole
+                if (GolfBall.transform.position.y == WinYValue)
+                {
+                    Debug.Log("IN THE HOLE");
+                }
                 break;
 
             case (GameState.PUTTING):
@@ -138,6 +147,8 @@ public class GameStateMachine : MonoBehaviour
     // set up waiting game state
     public void ToWaiting()
     {
+        // Play hit sound effect
+        hitSoundEffect.Play();
         // Dsiable putter
         PutterObject.DisablePutter();
 
