@@ -27,7 +27,8 @@ public class GameStateMachine : MonoBehaviour
     {
         AIMIMG,
         PUTTING,
-        WAITING
+        WAITING,
+        END
     }
     public GameState currentState;
 
