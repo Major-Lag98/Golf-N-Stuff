@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelData
+public class LevelData : MonoBehaviour
 {
     // mark if this level is the last of the game
     public bool FinalHole = false;
