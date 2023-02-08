@@ -9,6 +9,8 @@ public class GameStateMachine : MonoBehaviour
 
     public Rigidbody GolfBall;
 
+    public LevelData Data;
+
     public float yPosition;
 
     public float WaitIdleTimeMax;
@@ -150,8 +152,12 @@ public class GameStateMachine : MonoBehaviour
     {
         // Play hit sound effect
         hitSoundEffect.Play();
+
         // Dsiable putter
         PutterObject.DisablePutter();
+
+        // add one to putt
+        Data.AddPutt();
 
         // Enable Camera controlls after a grace period from putting
         CameraObject.SleepThenEnable();
