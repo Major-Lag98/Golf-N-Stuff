@@ -5,12 +5,16 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-
+    public LevelData Data;
     public TMP_Text NumberOfPuttsDisplay;
 
     public TMP_Text ParDisplay;
 
     public TMP_Text FinalTermDisplay;
+
+    public GameObject PlayingUI;
+    public GameObject EndLevelUI;
+
 
     // number of putts should update each stroke
     public void UpdatePuttsText(int strokes)
@@ -54,6 +58,13 @@ public class UIManager : MonoBehaviour
         }
 
         return text;
+    }
+
+    public void DisplayEndUI()
+    {
+        SetFinalTermText(Data.GetPutts(), Data.Par);
+   
+        EndLevelUI.SetActive(true);
     }
 
 }
