@@ -789,7 +789,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-113720
+  m_Name: pb_Mesh-1310
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3300,9 +3300,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2062177405503117465, guid: 6e134dec464a8f245a8728b766f9f014, type: 3}
+      propertyPath: MaxDistance
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062177405503117465, guid: 6e134dec464a8f245a8728b766f9f014, type: 3}
       propertyPath: StateMachine
       value: 
       objectReference: {fileID: 1652611260}
+    - target: {fileID: 2062177405503117466, guid: 6e134dec464a8f245a8728b766f9f014, type: 3}
+      propertyPath: m_Drag
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2062177406428612556, guid: 6e134dec464a8f245a8728b766f9f014, type: 3}
       propertyPath: m_Name
       value: Golfball_02
