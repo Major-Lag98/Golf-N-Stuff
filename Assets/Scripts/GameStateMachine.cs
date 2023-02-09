@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class GameStateMachine : MonoBehaviour
@@ -10,6 +11,8 @@ public class GameStateMachine : MonoBehaviour
     public Rigidbody GolfBall;
 
     public LevelData Data;
+
+    public UIManager UIManage;
 
     public float yPosition;
 
@@ -109,6 +112,10 @@ public class GameStateMachine : MonoBehaviour
                 ToWaiting();
                 break;
 
+            case (GameState.END):
+                ToEnd();
+                break;
+
         }
 
     }
@@ -165,6 +172,13 @@ public class GameStateMachine : MonoBehaviour
         // turn off indicator
         CameraObject.DisableAimLine();
 
+    }
+
+    public void ToEnd()
+    {
+        // display the end of level menu
+        UIManage.DisplayEndUI();
+        
     }
 
     void resetCounter()

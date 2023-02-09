@@ -5,22 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class LevelSwitch : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void SwitchLevel(string SceneName)
+    public void SwitchLevelStr(string SceneName)
     {
         Debug.Log("You have clicked the button!");
         SceneManager.LoadScene(SceneName);
+
+    }
+
+    public void SwitchLevelInt(int SceneIndex)
+    {
+        Debug.Log("You have clicked the button!");
+        SceneManager.LoadScene(SceneIndex);
 
     }
 }
