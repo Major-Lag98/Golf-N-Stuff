@@ -789,7 +789,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1310
+  m_Name: pb_Mesh-11052
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3301,7 +3301,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2062177405503117465, guid: 6e134dec464a8f245a8728b766f9f014, type: 3}
       propertyPath: MaxDistance
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2062177405503117465, guid: 6e134dec464a8f245a8728b766f9f014, type: 3}
       propertyPath: StateMachine
@@ -3371,6 +3371,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 877612701}
+    - target: {fileID: 2062177406960422637, guid: 6e134dec464a8f245a8728b766f9f014, type: 3}
+      propertyPath: m_VersionIndex
+      value: 7259
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e134dec464a8f245a8728b766f9f014, type: 3}
 --- !u!1 &1652611259
