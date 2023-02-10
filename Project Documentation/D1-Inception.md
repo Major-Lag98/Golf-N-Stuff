@@ -4,7 +4,7 @@ Group 01 – “Golf-n-Stuff”\
 Group Members: Alden Smith, Kendall Callison, Tomas Jauregui, Andrew Milizia, Kristiana Kirk, Corey Moreno
 
 ## 1. Introduction 
-In the United States, 17.8 million people have played miniature golf and almost every major city has minature golf course. What if it is raining outside, too late to play, or you are just to lazy to play mini golf? Golf-n-Stuff is a mini golf game that is available to play on a browser of any computer that has internet access. When the user loads Golf-n-Stuff, it will load up 18 holes, which will count the puts, hole in ones, and more. It utilizes the C# language and 3D game engine called Unity. 
+In the United States, 17.8 million people have played miniature golf and almost every major city has minature golf course. What if it is raining outside, too late to play, or you are just to lazy to play mini golf? How about a slow day at work and the boss called out today? Golf-n-Stuff is a mini golf game that is available to play on a browser of any computer that has internet access. And the best part; it's free! When the user loads Golf-n-Stuff, it will load up 18 holes with silly environments, which will count the puts, hole in ones, and more. It utilizes the C# language and 3D game engine called Unity. 
 
 ## 2. Initial value proposition and customer segments
 **Initial Value Proposition:**
@@ -20,5 +20,33 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 
 
 ## 3. Interview summary
+#Interview 1:
+**Summary:** Customers expect quirky envirnments and silly things to look at. Being able to play with others is a real big value customers hold and expect from games. They expect video games to give an experience different from real life. We need lots of courses, different envirnments, not so simple puzzles. Lastly customizable golf balls.
+**Intervewer:** Alden Smith
+**Interviewee:** Sierra Morales
+**When:** 2/9/2023
+**Consumer Segments:** NAU ESports
+
+**Key Insights:**
++ Product must be eye catching
++ Golfing is a multiplayer game
++ Must provide what reality does not
+
+**Representative Quotes**
++ "I expect it to be kinda silly"
++ "Play golf on the beach, moon, fishtank, or outerspace"
++ "I expect the courses to be intricate, complex, lots of angles"
+
+**Hypotheses that were validated**
++ She emphasized multiplayer as a need
++ She said levels need to be eyecatching and different from reality
++ She did not really care about end game statisics which was different from my opinion
+
+**Assessment: Must have / Nice to have / Don’t care**
++ Multiplayer (Must)
++ Different Envirnments (Must)
++ Customization (Nice)
++ Complex levels (Nice)
++ Statistics (Dont care)
 
 ## 4. Final value proposition and consumer segments
