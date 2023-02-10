@@ -22,10 +22,11 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 ## 3. Interview summary
 ### Interview 1:
 **Summary:** Customers expect quirky envirnments and silly things to look at. Being able to play with others is a real big value customers hold and expect from games. They expect video games to give an experience different from real life. We need lots of courses, different envirnments, not so simple puzzles. Lastly customizable golf balls.
-**Intervewer:** Alden Smith
-**Interviewee:** Sierra Morales
-**When:** 2/9/2023
-**Consumer Segments:** NAU ESports
+
+**Intervewer:** Alden Smith\
+**Interviewee:** Sierra Morales\
+**When:** 2/9/2023\
+**Consumer Segments:** Video Game users
 
 **Key Insights:**
 + Product must be eye catching
