@@ -12,10 +12,10 @@ Although Golf-N-Stuff is still in developement, you are able to play level 2 to 
 
 
 # Controls
-"`" - Lock cursor
-"LShift" - Enter and exit putting
-"R" - Reset position of ball
-"Mouse Movement" - Swing the putter
+"`" - Lock cursor <br />
+"LShift" - Enter and exit putting <br />
+"R" - Reset position of ball <br />
+"Mouse Movement" - Swing the putter <br />
 
 # ScreenShots
 
