@@ -11,8 +11,16 @@ With a wide variety of maps, obtainable golf balls, and relaxing lofi music, Gol
 Although Golf-N-Stuff is still in developement, you are able to play level 2 to get familiar with the controls
 
 
-# Controls:
+# Controls
 "`" - Lock cursor
 "LShift" - Enter and exit putting
 "R" - Reset position of ball
 "Mouse Movement" - Swing the putter
+
+# ScreenShots
+
+![golf 1](https://user-images.githubusercontent.com/102387612/218224355-94060d05-c6b1-44f9-b90d-d71166aa2e67.png)
+
+![golf 2](https://user-images.githubusercontent.com/102387612/218224362-827d3cff-5021-4ca8-8c71-52d71ae16cad.png)
+
+![golf 3](https://user-images.githubusercontent.com/102387612/218224368-d2b78557-c9b7-4ad0-be7b-134203821251.png)
