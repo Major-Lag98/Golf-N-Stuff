@@ -81,6 +81,109 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 + Statistics (Nice)
 
 ### Interview 3:
+**Summary:** The subject at hand described many things though most of which included player rewards. The player would progress though the game and while doing so would have many chances for unlocks. These unlocks would allow the user to customize the ball, club, or playermodel. Along with customization, the interviewee felt strongly for multiplayer games. Over all the interviewee was excited for the ideas.
+
+**Intervewer:** Kendall Callison\
+**Interviewee:** Kaden Anderson\
+**When:** 2/11/2023\
+**Consumer Segments:** Video Game users
+
+**Key Insights:**
++ A Playable Character Movement "walking to the ball"
++ Character Customization
++ Easily Playable On Any Computer
++ Have A Good Reward System
++ Some Kind of Multiplayer
+
+**Representative Quotes**
++ "I would like to have a character that is mine and that I can play as"
++ "Most the time I am playing a game, it's with friends."
++ "I want to make my character stand out in a fuuny way"
+
+**Hypotheses that were validated**
+ **Found For Expectations**
+ + The interviewee wants to put their own personallity into the game with customizable models.
+ + He described the need for a Multiplayer Mode
+ + He found the idea of global leader boards to be a large reason to play more and more.
+ **Found Against Expectations**
+ + The Interviewee had no concern for what the graphics were like, Stressed gameplay over all.
+ + The Interviewee had ideas of having a character and free movement.
+
+**Assessment: Must have / Nice to have / Don’t care**
++ Customization (Must)
++ Form of Multiplayer (Must)
++ Leader Boards (Must)
++ Free Movement (Nice)
++ Many Levels (Nice)
++ Power Ups (Nice)
++ Any Prefered Graphics (Dont Care)
+
+### Interview 4:
+**Summary:** Working a nine to five desk job, the interviewee had very little that he wanted in a game though heavily enphasied what he did want. Ease of use was his first proirity. Something that could easily be turned off and on in a matter of a couple clicks and seconds. Second of all was a game of media that would keep his attention and that was interesting either in being new or unique. He is a big fan of golf and misses it in the few off months.
+
+**Intervewer:** Kendall Callison\
+**Interviewee:** Ross Secaur\
+**When:** 2/11/2023\
+**Consumer Segments:** Office Employee
+
+**Key Insights:**
++ Easily Openable and Closeable with Saving
++ Good Game Play That Continues To Be Freash and New 
++ Easily Playable On Any Computer
++ Captures the Spirit of Golf
+
+**Representative Quotes**
++ "It's hard to slack when someone is walking around the corner every couple of minutes or so"
++ "I have always loved games though most online webgames get stale from five minutes of play"
++ "After work I tipically do not have an urge to play a video game... only when procrastinating work"
+
+**Hypotheses that were validated**
+**Found For Expectations**
++ The interviewee needs an easy to open way of playing the game
++ He Wants new and different experiances thoughout the game
+**Found Against Expectations**
++ The interviewee had no concern for multiplayer
++ The interviewee wanted the feel of watching golf and wanted something that captures the same tone
+
+**Assessment: Must have / Nice to have / Don’t care**
++ Customization (dont care)
++ Form of Multiplayer (dont care)
++ Leader Boards (nice)
++ Easily Accessable (Must)
++ Many Levels (Must)
++ Power Ups (Nice)
++ Any Prefered Graphics (Nice)
+
+### Interview 5:
+**Summary:** Customer is looking for better keyboard inputs and more visuals
+
+**Intervewer:** Corey Moreno\
+**Interviewee:** Leo Yoke\
+**When:** 2/11/2023\
+**Consumer Segments:** Desk Job Employee
+
+**Key Insights:**
++ Must be eye catching
++ Must be intuitive
++ Low-poly visuals are making a comeback
+
+**Representative Quotes**
++ "I can see this turning out to be the next addicting game"
++ "A nice visual background would be neat"
++ "I like the mouse movement as the way to hit the ball"
+
+**Hypotheses that were validated**
++ Background must be visually appealing
++ Controlls must be intuitive
++ Achievements are motivators
+
+**Assessment: Must have / Nice to have / Don’t care**
++ Multiplayer (Nice to have)
++ Secrets (Don't care)
++ Speedrunning (Must)
++ Unlockables (Must)
+
+### Interview 6:
 **Summary:** Customer is looking for a mini golf game that is entertaining and can be played on her computer. She would like to see challenges as the levels progress. She is expecting the instructions to be easy to read and understand. Multi-player is something she would use with her friends. 
 
 **Intervewer:** Kristiana Kirk\
@@ -111,7 +214,7 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 + No signing up for account (Must)
 + Demo before level 1 (Must)
 
-### Interview 4:
+### Interview 7:
 **Summary:** The customer likes to play video games and would try our Golf-N-Stuff game when it comes out. He expects it not be like acutal mini golf and more like a video game where there is power ups, ability to switch golf clubs, and ability to control how much power is in each put. 
 
 **Intervewer:** Kristiana Kirk\
