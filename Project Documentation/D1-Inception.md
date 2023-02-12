@@ -281,7 +281,7 @@ Statistics (Don’t care)
 Mechanics works properly (Must)
 Power ups(Don't care)
 
-### Interview9:
+### Interview 9:
 **Summary:** The customer said the he does not care for golf games and that a free golf game does not help him during his free time 
 
 **Intervewer:**  Tomas Jauregui\
@@ -314,6 +314,42 @@ Power ups(Don’t care)
 Golf game theme(Don’t care)
 Mechanics( Don't Care )
 Free web-based game (Don’t care)
+
+### Interview 9:
+**Summary:** The customer is a college student playing many games with friends; he said it would be hard to separate from other golf games. He compared the idea to golfing with friends and said we would need to differentiate from that by adding additional features like the weather. He said there is a lot of golf game out there already.
+
+**Intervewer:** Andrew Milizia\
+**Interviewee:** Alex Milizia\
+**When:** 2/11/2023\
+**Consumer Segments:** Video Game User,
+                       Brother
+                       
+**Key Insights:**
++ Game ball should be smoother
++ hard to be differnt when so many golf games are out
++ add differnt features like weather
++ customizable items
++ differnt level types
++ a decent difficulty in the levels
++ an easy control system
+
+**Representative Quotes**
++ “Should be Different from golf and friends.”
++ “difficult levels were not hole-in-one all the time but not extremely hard.”
++ “It's a golf game. There a lot of them around.”
++ “It is hard to separate us from other golf games.”
++ “Ball needs to have more movement.”
+
+**Hypotheses that were validated**
++ We need to have different level types
++ Having a decent amount of features for the game
++ had the idea of adding a weather system
+
+**Assessment: Must have / Nice to have / Don’t care**
++ Easy controls(must have)
++ weather(nice to have)
++ Smoother movement(nice to have)
+
 
 
 ## 4. Final value proposition and consumer segments
