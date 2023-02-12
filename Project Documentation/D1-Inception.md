@@ -252,7 +252,7 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 **Intervewer:** Andrew Milizia\
 **Interviewee:** Alex Milizia\
 **When:** 2/11/2023\
-**Consumer Segments:** Video Game User
+**Consumer Segments:** Video Game User,
                        Brother
                        
 **Key Insights:**
