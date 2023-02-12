@@ -13,10 +13,10 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 
 **Initial Consumer Segments:**
 
-- Video game users
-- Golf enthusiasts
-- College students
-- Desk job employees
++ Video Game User
++ Golf Enthusiasts
++ College Student
++ Office Employee
 
 
 ## 3. Interview summary
@@ -86,7 +86,7 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 **Intervewer:** Kendall Callison\
 **Interviewee:** Kaden Anderson\
 **When:** 2/11/2023\
-**Consumer Segments:** Video Game users
+**Consumer Segments:** Video Game User
 
 **Key Insights:**
 + A Playable Character Movement "walking to the ball"
@@ -160,7 +160,7 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 **Intervewer:** Corey Moreno\
 **Interviewee:** Leo Yoke\
 **When:** 2/11/2023\
-**Consumer Segments:** Desk Job Employee
+**Consumer Segments:** Office Employee
 
 **Key Insights:**
 + Must be eye catching
@@ -247,3 +247,10 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 + Golf putter (Nice)
 
 ## 4. Final value proposition and consumer segments
+**Final Value Proposition:**
+Golf-N-Stuff is a free miniature golf game that is playable on any computers browser that has internet access. The game consists of multiplayer, powerups, and functionality for playing. It does not require a user to sign up for an account in order to play.
+
+**Consumer segments:**
++ Video Game User
++ Office Empolyee
++ College Student
