@@ -9,7 +9,7 @@ In the United States, 17.8 million people have played miniature golf and almost 
 ## 2. Initial value proposition and customer segments
 **Initial Value Proposition:**
 
-Golf-n-Stuff is a free game that is playable on any computer browser that has internet access. It does not require a user to sign in or sign up to play. Golf-n-Stuff is a virtual way of playing minature golf.
+Golf-n-Stuff is a free game that is playable on any computer browser that has internet access. It does not require a user to sign in or sign up to play. You can compete for best scores and record them arcade cabinet style. Golf-n-Stuff is a virtual way of playing minature golf.
 
 **Initial Consumer Segments:**
 
@@ -51,5 +51,33 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 + Statistics (Dont care)
 
 ### Interview 2:
+**Summary:** Customer are looking for clearly displayed and intuitive controlls.
+
+**Intervewer:** Alden Smith\
+**Interviewee:** Mia Visser\
+**When:** 2/10/2023\
+**Consumer Segments:** Video Game users
+
+**Key Insights:**
++ Product must be easy to play
++ Minigolf is a family game
++ Minigolf is better when its complex
+
+**Representative Quotes**
++ "It first wasnt clear that I had a putter"
++ "It would be cool if there were secrete holes"
++ "I used to swing at the ball as hard as I can even though I wasnt supposed to. It was fun."
++ "I love finding 'Easter Eggs' in games"
+
+**Hypotheses that were validated**
++ Multiplayer is expected
++ Controlls must be intuitive
++ Secrets are fun
+
+**Assessment: Must have / Nice to have / Don’t care**
++ Multiplayer (Must)
++ Secrets (Nice)
++ Competition (Nice)
++ Statistics (Nice)
 
 ## 4. Final value proposition and consumer segments
