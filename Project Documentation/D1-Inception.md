@@ -249,7 +249,7 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 ### Interview 8:
 **Summary:** The customer is a college student playing many games with friends; he said it would be hard to separate from other golf games. He compared the idea to golfing with friends and said we would need to differentiate from that by adding additional features like the weather. He said there is a lot of golf game out there already.
 
-*Intervewer:** Andrew Milizia\
+**Intervewer:** Andrew Milizia\
 **Interviewee:** Alex Milizia\
 **When:** 2/11/2023\
 **Consumer Segments:** Video Game User
