@@ -80,4 +80,33 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 + Competition (Nice)
 + Statistics (Nice)
 
+### Interview 3:
+**Summary:** Customer is looking for better keyboard inputs and more visuals
+
+**Intervewer:** Corey Moreno\
+**Interviewee:** Leo Yoke\
+**When:** 2/11/2023\
+**Consumer Segments:** Desk Job Employee
+
+**Key Insights:**
++ Must be eye catching
++ Must be intuitive
++ Low-poly visuals are making a comeback
+
+**Representative Quotes**
++ "I can see this turning out to be the next addicting game"
++ "A nice visual background would be neat"
++ "I like the mouse movement as the way to hit the ball"
+
+**Hypotheses that were validated**
++ Background must be visually appealing
++ Controlls must be intuitive
++ Achievements are motivators
+
+**Assessment: Must have / Nice to have / Don’t care**
++ Multiplayer (Nice to have)
++ Secrets (Don't care)
++ Speedrunning (Must)
++ Unlockables (Must)
+
 ## 4. Final value proposition and consumer segments
