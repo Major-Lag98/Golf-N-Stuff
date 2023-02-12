@@ -247,6 +247,75 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 + Golf putter (Nice)
 
 ### Interview 8:
+**Summary:** The customer and former game developer  was concerned about how the golf game was going to be since he was confused about the distinct  features that we added into the game.
+
+**Interviewer:** Tomas Jauregui\
+**Interviewee:** Dr.Amersh\
+**When:** 2/9/2023\
+**Consumer Segments:** Video Game User/Developer
+
+**Key Insights:**
+The primary focus should be the golf skill, any other non golf components take away from the game primary theme.
+If power ups were added than the player would get confused
+Lower amount but high quality of maps allow for better skill to risk ratio.
+
+**Representative Quotes:**
+
+“Having mario style platformer elements(boost and jump pads) takes away from the skill of
+hitting the ball and certain maps have to be created in order to have the same level of skill”.
+
+“The game should be about the risk and reward element, longer maps allows for this and having
+less levels allows players to get better at those map”
+
+“There needs to be a central focus on the golf itself and not any other elements, this way users
+can be less confused about how the game works”.
+
+**Hypotheses that were validated**
++ Power ups do not matter in a mini golf game
++ Mechanics must be the key focus
+
+**Assessment: Must have / Nice to have / Don’t care**
+
+Multiplayer (Don’t care)
+Statistics (Don’t care)
+Mechanics works properly (Must)
+Power ups(Don't care)
+
+### Interview 9:
+**Summary:** The customer said the he does not care for golf games and that a free golf game does not help him during his free time 
+
+**Intervewer:**  Tomas Jauregui\
+**Interviewee:** Charlie\
+**When:** 2/9/2023\
+**Consumer Segments:** Video game user
+
+**Key Insights:**
+Mobile games seem to be more of a priority than a web based game
+
+Having a golf game online seems repetitive in nature
+
+Power ups would make the game more repetitive instead of unique .
+
+**Representative Quotes:**
+
+“I feel like I can just play a mobile game on my phone rather than play this”.
+
+“I feel like most of these types of games already have power ups”
+
+“This reminds me of  a lot of cool math games, it does not  feel like anything special”
+
+**Hypotheses that were validated**
++ Web-based games do not matter due to mobile games
++ Mini golf game genre is saturated on the internet 
+
+**Assessment: Must have / Nice to have / Don’t care**
+
+Power ups(Don’t care)
+Golf game theme(Don’t care)
+Mechanics( Don't Care )
+Free web-based game (Don’t care)
+
+### Interview 9:
 **Summary:** The customer is a college student playing many games with friends; he said it would be hard to separate from other golf games. He compared the idea to golfing with friends and said we would need to differentiate from that by adding additional features like the weather. He said there is a lot of golf game out there already.
 
 **Intervewer:** Andrew Milizia\
@@ -280,6 +349,7 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 + Easy controls(must have)
 + weather(nice to have)
 + Smoother movement(nice to have)
+
 
 
 ## 4. Final value proposition and consumer segments
