@@ -9,7 +9,7 @@ In the United States, 17.8 million people have played miniature golf and almost 
 ## 2. Initial value proposition and customer segments
 **Initial Value Proposition:**
 
-Golf-n-Stuff is a free game that is playable on any computer browser that has internet access. It does not require a user to sign in or sign up to play. Golf-n-Stuff is a virtual way of playing minature golf.
+Golf-n-Stuff is a free game that is playable on any computer browser that has internet access. It does not require a user to sign in or sign up to play. You can compete for best scores and record them arcade cabinet style. Golf-n-Stuff is a virtual way of playing minature golf.
 
 **Initial Consumer Segments:**
 
@@ -50,7 +50,36 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 + Complex levels (Nice)
 + Statistics (Dont care)
 
-### Interview 2:
+**Summary:** Customer are looking for clearly displayed and intuitive controlls.
+
+**Intervewer:** Alden Smith\
+**Interviewee:** Mia Visser\
+**When:** 2/10/2023\
+**Consumer Segments:** Video Game users
+
+**Key Insights:**
++ Product must be easy to play
++ Minigolf is a family game
++ Minigolf is better when its complex
+
+**Representative Quotes**
++ "It first wasnt clear that I had a putter"
++ "It would be cool if there were secrete holes"
++ "I used to swing at the ball as hard as I can even though I wasnt supposed to. It was fun."
++ "I love finding 'Easter Eggs' in games"
+
+**Hypotheses that were validated**
++ Multiplayer is expected
++ Controlls must be intuitive
++ Secrets are fun
+
+**Assessment: Must have / Nice to have / Don’t care**
++ Multiplayer (Must)
++ Secrets (Nice)
++ Competition (Nice)
++ Statistics (Nice)
+
+### Interview 3:
 **Summary:** The subject at hand described many things though most of which included player rewards. The player would progress though the game and while doing so would have many chances for unlocks. These unlocks would allow the user to customize the ball, club, or playermodel. Along with customization, the interviewee felt strongly for multiplayer games. Over all the interviewee was excited for the ideas.
 
 **Intervewer:** Kendall Callison\
@@ -71,13 +100,13 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 + "I want to make my character stand out in a fuuny way"
 
 **Hypotheses that were validated**
-  **Found For Expectations**
-    + The interviewee wants to put their own personallity into the game with customizable models.
-    + He described the need for a Multiplayer Mode
-    + He found the idea of global leader boards to be a large reason to play more and more.
-  **Found Against Expectations**
-    + The Interviewee had no concern for what the graphics were like, Stressed gameplay over all.
-    + The Interviewee had ideas of having a character and free movement.
+ **Found For Expectations**
+ + The interviewee wants to put their own personallity into the game with customizable models.
+ + He described the need for a Multiplayer Mode
+ + He found the idea of global leader boards to be a large reason to play more and more.
+ **Found Against Expectations**
+ + The Interviewee had no concern for what the graphics were like, Stressed gameplay over all.
+ + The Interviewee had ideas of having a character and free movement.
 
 **Assessment: Must have / Nice to have / Don’t care**
 + Customization (Must)
@@ -88,7 +117,7 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 + Power Ups (Nice)
 + Any Prefered Graphics (Dont Care)
 
-### Interview 3:
+### Interview 4:
 **Summary:** Working a nine to five desk job, the interviewee had very little that he wanted in a game though heavily enphasied what he did want. Ease of use was his first proirity. Something that could easily be turned off and on in a matter of a couple clicks and seconds. Second of all was a game of media that would keep his attention and that was interesting either in being new or unique. He is a big fan of golf and misses it in the few off months.
 
 **Intervewer:** Kendall Callison\
@@ -108,12 +137,12 @@ Golf-n-Stuff is a free game that is playable on any computer browser that has in
 + "After work I tipically do not have an urge to play a video game... only when procrastinating work"
 
 **Hypotheses that were validated**
-  **Found For Expectations**
-    + The interviewee needs an easy to open way of playing the game
-    + He Wants new and different experiances thoughout the game
-  **Found Against Expectations**
-    + The interviewee had no concern for multiplayer
-    + The interviewee wanted the feel of watching golf and wanted something that captures the same tone
+**Found For Expectations**
++ The interviewee needs an easy to open way of playing the game
++ He Wants new and different experiances thoughout the game
+**Found Against Expectations**
++ The interviewee had no concern for multiplayer
++ The interviewee wanted the feel of watching golf and wanted something that captures the same tone
 
 **Assessment: Must have / Nice to have / Don’t care**
 + Customization (dont care)
