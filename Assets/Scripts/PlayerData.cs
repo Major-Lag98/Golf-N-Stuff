@@ -1,18 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerData : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // whether or no the player started at level one or any other later levels
+    public bool CountableRun = true;
+    // player's over all scrore
+    public int Score;
+    
+
+    private void Update()
     {
-        
+        Debug.Log(Score);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
