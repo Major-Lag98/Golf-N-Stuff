@@ -6,7 +6,7 @@ public class Putter : MonoBehaviour
 {
 
     public float MouseSensitivity = 1f;
-
+    public float drag ; 
     public float power;
 
     public GameObject PutterObject;
@@ -114,7 +114,7 @@ if (collision.gameObject.CompareTag("Ramp") )
 }
 else
 {
-    BallRB.drag = 0.75f;
+    BallRB.drag = drag; 
 }
 }
 }
