@@ -30,6 +30,7 @@ public class CutoutObject : MonoBehaviour
 
         Vector3 offset = targetObject.position - transform.position;
         RaycastHit[] hitObjects = Physics.RaycastAll(transform.position, offset, offset.magnitude, wallMask);
+        
 
         for (int i = 0; i < hitObjects.Length; ++i)
         {
@@ -41,6 +42,7 @@ public class CutoutObject : MonoBehaviour
                 materials[m].SetFloat("_CutoutSize", cutoutSize);
                 materials[m].SetFloat("_FalloffSize", fallOffSize);
             }
+            
         }
     }
 }
