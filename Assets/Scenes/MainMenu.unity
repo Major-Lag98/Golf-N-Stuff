@@ -1569,6 +1569,7 @@ GameObject:
   - component: {fileID: 757885191}
   - component: {fileID: 757885190}
   - component: {fileID: 757885195}
+  - component: {fileID: 757885196}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -1619,7 +1620,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757885196}
+        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
+        m_MethodName: StartGolf
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &757885191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1719,6 +1732,18 @@ MonoBehaviour:
   Main: {fileID: 779836262}
   LevelSelect: {fileID: 1472440934}
   Options: {fileID: 1201085359}
+--- !u!114 &757885196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757885189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 936a15bd1a7d7d34d990239391fcf477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &772376570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2858,10 +2883,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LevelSwitch, Assembly-CSharp
-        m_MethodName: SwitchLevel
-        m_Mode: 5
+      - m_Target: {fileID: 757885196}
+        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
+        m_MethodName: StartGolf
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
