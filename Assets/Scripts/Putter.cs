@@ -6,7 +6,7 @@ public class Putter : MonoBehaviour
 {
 
     public float MouseSensitivity = 1f;
-
+    public float drag ; 
     public float power;
 
     public GameObject PutterObject;
@@ -41,7 +41,7 @@ public class Putter : MonoBehaviour
     {
 
 
-
+        
 
         // if we are not in a putting state, do nothing
         if (StateMachine.currentState != GameStateMachine.GameState.PUTTING) return;
@@ -102,5 +102,19 @@ public class Putter : MonoBehaviour
     {
         PutterObject.SetActive(true);
     }
+void OnCollisionEnter(Collision collision)
+{
+     
+if (collision.gameObject.CompareTag("Ramp") ) 
+{
+    BallRB.drag = 0 ;
 
+
+
+}
+else
+{
+    BallRB.drag = drag; 
+}
+}
 }
