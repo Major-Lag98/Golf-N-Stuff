@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class LevelSwitch : MonoBehaviour
 {
-    public void SwitchLevelStr(string SceneName)
+    
+    public string  SceneName; 
+    public void SwitchLevelStr(string  SceneName)
     {
         Debug.Log("You have clicked the button!");
-        SceneManager.LoadScene(SceneName);
+        SceneManager.LoadScene(SceneName,LoadSceneMode.Single);
+        
 
     }
 

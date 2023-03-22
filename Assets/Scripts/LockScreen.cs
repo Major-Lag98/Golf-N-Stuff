@@ -13,7 +13,8 @@ public class LockScreen : MonoBehaviour
     {
         // if we press escape unlock the screen, or the level is over
         if (State.currentState == GameStateMachine.GameState.END ||
-                                          Input.GetKeyDown(KeyCode.Escape))
+        State.currentState == GameStateMachine.GameState.PAUSE||
+        Input.GetKeyDown(KeyCode.Escape))
         {
             Cursor.lockState = CursorLockMode.None;
         }
@@ -25,6 +26,5 @@ public class LockScreen : MonoBehaviour
 
         }
 
-        // if we press escape unlock the screen
     }
 }

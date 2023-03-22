@@ -15,7 +15,7 @@ public class PlayerData : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Score);
+        //Debug.Log(Score);
     }
 
 }

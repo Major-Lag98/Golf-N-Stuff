@@ -3,7 +3,16 @@ guid: 37f4c89c983d44c49ab0fd38e7e5342b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Data: {instanceID: 0}
+  - NumberOfPuttsDisplay: {instanceID: 0}
+  - ParDisplay: {instanceID: 0}
+  - FinalTermDisplay: {instanceID: 0}
+  - PauseTermDisplay: {instanceID: 0}
+  - PlayingUI: {instanceID: 0}
+  - EndLevelUI: {instanceID: 0}
+  - PauseLevelUI: {fileID: 600654206344582096, guid: 52a9547371646a3408583cd287b94f45, type: 3}
+  - check: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
