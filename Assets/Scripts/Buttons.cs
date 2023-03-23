@@ -4,56 +4,72 @@ using UnityEngine;
 
 public class Buttons : MonoBehaviour
 {
-    bool locked = false;
-
+    private bool pause = true ;
+    
     public GameStateMachine StateMachine;
 
-    public Transform Ball;
-    Vector3 BallOriginalPos;
-    Rigidbody ballRB;
 
-    void Start()
-    {
-        
-        BallOriginalPos = Ball.position;
-        ballRB = Ball.GetComponent<Rigidbody>();
-
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
-        // lock cursor when ` is pressed
-        if (Input.GetKeyDown(KeyCode.BackQuote))
-        {
-            locked = !locked;
+        
+        //check if player is not at the end of level
+       if(StateMachine.currentState != GameStateMachine. GameState.END)
+       {
 
-            if (locked) Cursor.lockState = CursorLockMode.Locked;
-            else Cursor.lockState = CursorLockMode.None;
-        }
-
-        // R resets position
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Ball.position = BallOriginalPos;
-            ballRB.velocity = Vector3.zero;
-            ballRB.angularVelocity = Vector3.zero;
-        }
-
-        // Left Shift changes between aiming and putting
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            if (StateMachine.currentState == GameStateMachine.GameState.AIMIMG)
+                // Left Shift changes between aiming and putting
+                if (Input.GetKeyDown(KeyCode.LeftShift))
+                {
+                    switch(StateMachine.currentState)
+                    {
+                        case(GameStateMachine.GameState.AIMIMG):
+                        StateMachine.ChangeState(GameStateMachine.GameState.PUTTING);
+                        break;
+                        case(GameStateMachine.GameState.PUTTING):
+                        StateMachine.ChangeState(GameStateMachine.GameState.AIMIMG);
+                        break ;
+                        
+                    } 
+                }
+            
+            //resest postions of the ball based on last postion or start
+            if (Input.GetKeyDown(KeyCode.R)||Input.GetKeyDown(KeyCode.B))
             {
-                StateMachine.ChangeState(GameStateMachine.GameState.PUTTING);
+                if(Input.GetKeyDown(KeyCode.R))
+                {
+                    StateMachine.PutterObject.BallPrevPos = 
+                    StateMachine.PutterObject.BallOrignalPos;
+                }
+               StateMachine.PutterObject.ResetGolfBall(
+                StateMachine.PutterObject.BallPrevPos);
+            
             }
-            else if (StateMachine.currentState == GameStateMachine.GameState.PUTTING)
+            //pause button
+            if(Input.GetKeyDown(KeyCode.Tab))
             {
-                StateMachine.ChangeState(GameStateMachine.GameState.AIMIMG);
+                
+                //if first clicked
+                if(pause)
+                {
+                    
+                    //go into pause state
+                    Time.timeScale = 0; 
+                   StateMachine.ChangeState(GameStateMachine.GameState.PAUSE);
+                     
+                }
+                else
+                {
+                    Time.timeScale = 1; 
+                    StateMachine.ChangeState(GameStateMachine.GameState.WAITING);
+                }
+                
+                //switch pause 
+                pause = !pause; 
             }
-        }
+    
 
-
+       }
     }
 
 }
