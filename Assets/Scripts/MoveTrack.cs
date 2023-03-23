@@ -22,11 +22,11 @@ public class MoveTrack : MonoBehaviour
     }
    [SerializeField] private Way arrow = Way.VERT ;
    [SerializeField] public  Type path = Type.ROTATE ; 
-    public float perUnit = 0.05f  ; 
+    public float perUnit = 1f  ; 
     private float rotate ; 
     void Start()
     {
-        perUnit = perUnit * intenstity ; 
+        perUnit = perUnit * intenstity * Time.deltaTime; 
 
 
     }
