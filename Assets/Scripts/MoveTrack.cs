@@ -22,11 +22,11 @@ public class MoveTrack : MonoBehaviour
     }
    [SerializeField] private Way arrow = Way.VERT ;
    [SerializeField] public  Type path = Type.ROTATE ; 
-    public float perUnit = 0.05f  ; 
+    public float perUnit = 1f  ; 
     private float rotate ; 
     void Start()
     {
-        perUnit = perUnit * intenstity ; 
+        perUnit = perUnit * intenstity ;
 
 
     }
@@ -60,7 +60,7 @@ public class MoveTrack : MonoBehaviour
                    
                     //if vertical
                     case(Way.VERT):
-                         posX = this.transform.position.x ;
+                         posX = this.transform.position.x  ;
                         posY = LeftOrRightMove(switched,  posY) ; 
                     break;
                     //if horizontal
@@ -87,14 +87,14 @@ public class MoveTrack : MonoBehaviour
         if( switched )
         {
             //decirment
-            currDist+=perUnit;
-            pos =pos+   perUnit ; 
+            currDist+=perUnit * Time.deltaTime;  
+            pos =pos+   perUnit * Time.deltaTime;
         }
         else
         {
-            currDist-=perUnit;
+            currDist-=perUnit* Time.deltaTime; ;
             //incriment
-            pos=pos- perUnit ;  
+            pos=pos- perUnit * Time.deltaTime;
         }     
     
         return pos ; 
@@ -107,13 +107,13 @@ public class MoveTrack : MonoBehaviour
         switch(arrow)
         {
             case(Way.VERT):
-            rotationToAdd = new Vector3(0, 0, perUnit);
+            rotationToAdd = new Vector3(0, 0, perUnit* Time.deltaTime);
                  
                
 
             break;
             case(Way.HORZ):
-                    rotationToAdd = new Vector3(0, perUnit, 0);
+                    rotationToAdd = new Vector3(0, perUnit* Time.deltaTime, 0);
 
 
             break;
