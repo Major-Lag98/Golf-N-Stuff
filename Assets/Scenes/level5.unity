@@ -324,7 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 10
   minDistUnit: -10
-  intenstity: 2
+  intenstity: 300
   arrow: 1
   path: 0
   perUnit: 0.05
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 10
   minDistUnit: -10
-  intenstity: 2
+  intenstity: 300
   arrow: 1
   path: 1
   perUnit: 1
@@ -1115,7 +1115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 20
   minDistUnit: -20
-  intenstity: 4
+  intenstity: 300
   arrow: 0
   path: 0
   perUnit: 0.05
@@ -5440,7 +5440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 10
   minDistUnit: -10
-  intenstity: -2
+  intenstity: 300
   arrow: 1
   path: 1
   perUnit: 0.1
@@ -5467,7 +5467,6 @@ GameObject:
   m_Component:
   - component: {fileID: 695106026}
   - component: {fileID: 695106025}
-  - component: {fileID: 695106024}
   m_Layer: 0
   m_Name: PlayerData
   m_TagString: PlayerData
@@ -5475,18 +5474,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &695106024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695106023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6665766e08f31ba428491d1c81d7120a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &695106025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5630,7 +5617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 10
   minDistUnit: -10
-  intenstity: 2
+  intenstity: 300
   arrow: 1
   path: 0
   perUnit: 0.05
@@ -5663,7 +5650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 10
   minDistUnit: -10
-  intenstity: 2
+  intenstity: 300
   arrow: 0
   path: 1
   perUnit: 0.5
@@ -5929,7 +5916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 10
   minDistUnit: -10
-  intenstity: 2
+  intenstity: 300
   arrow: 0
   path: 1
   perUnit: 0.5
@@ -6239,7 +6226,7 @@ MonoBehaviour:
   UImanage: {fileID: 1113827575}
   Player: {fileID: 695106025}
   FinalHole: 0
-  Par: 3
+  Par: 5
 --- !u!4 &920508312
 Transform:
   m_ObjectHideFlags: 0
@@ -6486,7 +6473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 10
   minDistUnit: -10
-  intenstity: 2
+  intenstity: 300
   arrow: 1
   path: 0
   perUnit: 0.05
@@ -6527,7 +6514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 10
   minDistUnit: -10
-  intenstity: 2
+  intenstity: 300
   arrow: 1
   path: 1
   perUnit: 0.1
@@ -8378,7 +8365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 10
   minDistUnit: -10
-  intenstity: 2
+  intenstity: 300
   arrow: 0
   path: 1
   perUnit: 0.5
@@ -8578,7 +8565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 20
   minDistUnit: -20
-  intenstity: 4
+  intenstity: 300
   arrow: 0
   path: 0
   perUnit: 0.05
@@ -8830,7 +8817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistUnit: 10
   minDistUnit: -10
-  intenstity: 2
+  intenstity: 300
   arrow: 0
   path: 1
   perUnit: 0.5
