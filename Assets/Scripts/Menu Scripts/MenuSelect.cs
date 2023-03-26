@@ -9,7 +9,6 @@ public class MenuSelect : MonoBehaviour
     public GameObject LevelSelect;
     public GameObject Options;
 
-    
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +20,7 @@ public class MenuSelect : MonoBehaviour
     // set menu to level select
     public void SetMenuLevelSelect()
     {
-        // disable both Options and Main
+        // disable both Options, Help, and Main
         Main.SetActive(false);
         Options.SetActive(false);
         // enable Select Level
@@ -44,9 +43,8 @@ public class MenuSelect : MonoBehaviour
         // disable both Options and select
         LevelSelect.SetActive(false);
         Options.SetActive(false);
-        // enable Main 
+        // enable Main
         Main.SetActive(true);
     }
-
 
 }
