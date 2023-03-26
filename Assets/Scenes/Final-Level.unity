@@ -3827,9 +3827,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level
       objectReference: {fileID: 0}
+    - target: {fileID: 5263637444074645556, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5263637444302078315, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_LocalPosition.y
       value: -260.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263637444843269523, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263637445048096246, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -920
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263637445048096247, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5746924189852165054, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_RootOrder
