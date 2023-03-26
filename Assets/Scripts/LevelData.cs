@@ -32,7 +32,7 @@ public class LevelData : MonoBehaviour
     {
         putts++;
 
-        Debug.Log(putts);
+        //Debug.Log(putts);
 
         // send an update to the hud
         UImanage.UpdatePuttsText(putts);

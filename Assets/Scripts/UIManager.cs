@@ -11,10 +11,12 @@ public class UIManager : MonoBehaviour
     public TMP_Text ParDisplay;
 
     public TMP_Text FinalTermDisplay;
+    public TMP_Text PauseTermDisplay;
 
     public GameObject PlayingUI;
-    public GameObject EndLevelUI;
-
+    public  GameObject EndLevelUI;
+    public  GameObject PauseLevelUI;
+    public Buttons check; 
 
     // number of putts should update each stroke
     public void UpdatePuttsText(int strokes)
@@ -65,6 +67,11 @@ public class UIManager : MonoBehaviour
         SetFinalTermText(Data.GetPutts(), Data.Par);
    
         EndLevelUI.SetActive(true);
+    }
+    public void DisplayPauseUI(bool set )
+    { 
+        PauseLevelUI.SetActive(set);
+
     }
 
 }

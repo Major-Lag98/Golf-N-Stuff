@@ -5,41 +5,42 @@ using UnityEngine;
 
 public class GameStateMachine : MonoBehaviour
 {
+
     public Putter PutterObject;
+
     public CameraOrbit CameraObject;
 
-    public Rigidbody GolfBall;
+    public GameObject OutOfBounds;
 
     public LevelData Data;
 
     public UIManager UIManage;
 
-    public float yPosition;
-
     public float WaitIdleTimeMax;
-    float WaitIdleTime = 0;
+    private float WaitIdleTime = 0;
 
     public float MinSpeed;
 
-    public int MinYValue;
-
-    public float WinYValue;
+    public bool set = true ; 
 
     [SerializeField] private AudioSource hitSoundEffect;
 
-    private Vector3 lastPos;
+    private float limit ;
+ 
     public enum GameState
     {
         AIMIMG,
         PUTTING,
         WAITING,
-        END
+        END,
+        PAUSE
     }
     public GameState currentState;
 
     // Start is called before the first frame update
     void Start()
     {
+        limit = OutOfBounds.transform.position.y ; 
         // start the game in aiming
         ChangeState(GameState.AIMIMG);
     } 
@@ -47,47 +48,11 @@ public class GameStateMachine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // do things continuously depending on which state were in
-        switch (currentState)
-        {
-            case (GameState.AIMIMG):
-                // Check if ball is at the bottom of the hole
-                if (GolfBall.transform.position.y == WinYValue)
-                {
-                    Debug.Log("IN THE HOLE");
-                }
-                break;
+           if(currentState ==  GameState.WAITING)
+           {
+                speedAndBounds(); 
+           }
 
-            case (GameState.PUTTING):
-                break;
-
-            case (GameState.WAITING):
-                // ball is below a certin vertical height aka out of bounds, reset to previous putt
-                if (GolfBall.transform.position.y <  MinYValue)
-                {
-                    ResetGolfBallVelocity();
-                    GolfBall.transform.position = lastPos;
-                }
-                // look to see if golfball velocity is below a certain threshhold
-                if (GolfBall.velocity.magnitude < MinSpeed)
-                {
-                    // start counting
-                    WaitIdleTime += Time.deltaTime;
-
-                    // if we are not moving for x amount of time
-                    if (WaitIdleTime > WaitIdleTimeMax)
-                    {
-                        // change to aiming
-                        ChangeState(GameState.AIMIMG);
-                        resetCounter();
-                    }
-                }
-                else
-                {
-                    resetCounter();
-                }
-                break;
-        }
     }
 
 
@@ -105,95 +70,123 @@ public class GameStateMachine : MonoBehaviour
                 break;
 
             case (GameState.PUTTING):
-                ToPutting();
+                ToPutting(); 
+                set = true ; 
                 break;
 
             case (GameState.WAITING):
-                ToWaiting();
+                //hides ui
+                ToMenu(false);
+                ToWaiting(set);
+
+ 
+                
                 break;
 
-            case (GameState.END):
-                ToEnd();
+            default:
+                //displays ui
+                ToMenu(true);
+                set = false ; 
                 break;
-
         }
 
     }
+    //check for speed and if out of bounds 
+     void speedAndBounds()
+    {
+        // ball is below a certin vertical height aka out of bounds, reset to previous putt
+        if (PutterObject.BallRB.transform.position.y <  limit  )
+        {
+            PutterObject.ResetGolfBall(PutterObject.BallPrevPos);
+        }
+        // look to see if golfball velocity is below a certain threshhold
+        if (PutterObject.BallRB.velocity.magnitude < MinSpeed)
+        {
+            // start counting
+            WaitIdleTime += Time.deltaTime;
 
-    // set up aiming game state
-    public void ToAiming()
-    {   
-        // record the last position of the golf ball 
-        lastPos = GolfBall.transform.position;
-
-        // Enable the aiming line renderer
-        CameraObject.EnableAimLine();
-
-        // Enable Camera Movement
-        CameraObject.EnableCameraControlls();
-
-        // Dsiable putter if not already
-        PutterObject.DisablePutter();
-
-        
-        ResetGolfBallVelocity();
-
+            // if we are not moving for x amount of time
+            if (WaitIdleTime > WaitIdleTimeMax)
+            {
+                // change to aiming
+                ChangeState(GameState.AIMIMG);
+                resetCounter();
+            }
+        }
+        else
+        {
+            resetCounter();
+        }
     }
-
-    // set up putting game state
+    public void ToAiming()
+    {
+        ToSetAimCameraPutter(true,true,false);
+        // record the last position of the golf ball 
+        PutterObject.BallPrevPos = PutterObject.BallRB.transform.position;
+        
+        PutterObject.ResetGolfBall(PutterObject.BallPrevPos);
+    }
     public void ToPutting()
     {
-        // disable the aim line renderer
-        CameraObject.DisableAimLine();
+        ToSetAimCameraPutter(false,false,true);
 
-        // disable camera controlls
-        CameraObject.DisableCameraControlls();
+    }
+    // set up control state
+    public void ToSetAimCameraPutter(bool aim,bool camera, bool putter)
+    {   
 
-        // enable the putter object
-        PutterObject.EnablePutter();
+
+        // set the aiming line renderer
+        CameraObject.AimLineSet(aim);
+
+        // set Camera Movement
+        CameraObject.CameraControllsSet(camera);
+
+        // set putter if not already
+        PutterObject.PutterSet(putter);
+
 
     }
 
     // set up waiting game state
-    public void ToWaiting()
+    public void ToWaiting(bool set )
     {
-        // Play hit sound effect
-        hitSoundEffect.Play();
-
-        // Dsiable putter
-        PutterObject.DisablePutter();
-
-        // add one to putt
-        Data.AddPutt();
-
+        if(set)
+        {
+            // Play hit sound effect
+            hitSoundEffect.Play();
+            // add one to putt
+            Data.AddPutt();
+        }
+        //disable all objects
+        ToSetAimCameraPutter(false,false,false);
         // Enable Camera controlls after a grace period from putting
         CameraObject.SleepThenEnable();
 
-        // turn off indicator
-        CameraObject.DisableAimLine();
-
     }
 
-    public void ToEnd()
+    public void ToMenu(bool check)
     {
-        // display the end of level menu
-        UIManage.DisplayEndUI();
+        //disable all objects
+        ToSetAimCameraPutter(false,false,false);
+        if(currentState == GameState.END)
+        {
+            UIManage.DisplayEndUI();
+            
+            
+        }
+        else
+        {
+            // display the end of level menu
+             UIManage.DisplayPauseUI(check);
+        }
         
     }
 
-    void resetCounter()
+    public void resetCounter()
     {
         WaitIdleTime = 0;
     }
 
 
-    void ResetGolfBallVelocity()
-    {
-        // set velocity to 0
-        GolfBall.velocity = Vector3.zero;
-
-        // set angular velocity to 0
-        GolfBall.angularVelocity = Vector3.zero;
-
-    }
 }

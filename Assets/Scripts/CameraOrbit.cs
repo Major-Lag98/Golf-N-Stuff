@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CameraOrbit : MonoBehaviour
 {
-
+    public Camera main ; 
     Transform cameraTransform;
     Transform parentTransform;
 
@@ -16,7 +16,7 @@ public class CameraOrbit : MonoBehaviour
     public float cameraStartingDistance = 30f;
     [Space]
 
-    private float currentCameraDistance;
+    public float currentCameraDistance;
     public float cameraMinDistance = 1.5f;
     public float cameraMaxDistance = 90f;
     [Space]
@@ -39,7 +39,10 @@ public class CameraOrbit : MonoBehaviour
 
     public static LineRenderer LR;
     int distance = 15;
+    [Space]
 
+    public Ray cameraRay ; 
+     [Space]
     // Variable also used by putter 
     [HideInInspector] public static Vector3 facingDirection;
 
@@ -47,6 +50,9 @@ public class CameraOrbit : MonoBehaviour
     // Start is called before the first Update
     void Awake()
     {
+        
+        
+
         // start at the correct position and rotation
         cameraTransform = transform;
         parentTransform = transform.parent;
@@ -61,7 +67,6 @@ public class CameraOrbit : MonoBehaviour
 
     void LateUpdate()
     {
-
         MoveCamera();
         UpdateLineRenderer();
 
@@ -87,12 +92,10 @@ public class CameraOrbit : MonoBehaviour
             if (Input.GetAxis("Mouse ScrollWheel") != 0f)
             {
                 float ScrollAmount = Input.GetAxis("Mouse ScrollWheel") * ScrollSensitvity;
-
                 // make the camera go slower the closer it is to min distance (found on internet)
                 ScrollAmount *= (currentCameraDistance * 0.3f);
-                currentCameraDistance += ScrollAmount * -1f;
+                moveDistance(ScrollAmount); 
 
-                currentCameraDistance = Mathf.Clamp(currentCameraDistance, cameraMinDistance, cameraMaxDistance);
             }
         }
 
@@ -115,29 +118,20 @@ public class CameraOrbit : MonoBehaviour
         LR.SetPosition(1, parentTransform.position + facingDirection * distance);
     }
 
-    public void EnableAimLine()
+    public void AimLineSet(bool check)
     {
-        LR.enabled = true;
+        LR.enabled = check;
     }
 
-    public void DisableAimLine()
-    {
-        LR.enabled = false;
-    }
 
-    public void EnableCameraControlls()
+    public void CameraControllsSet(bool set )
     {
-        CameraEnabled = true;
-    }
-
-    public void DisableCameraControlls()
-    {
-        CameraEnabled = false;
+        CameraEnabled = set;
     }
 
     public void SleepThenEnable()
     {
-        EnableCameraControlls();
+        CameraControllsSet(true);
         StartCoroutine(WaitASec());
     }
 
@@ -146,6 +140,14 @@ public class CameraOrbit : MonoBehaviour
         yield return new WaitForSeconds(1);
         ready = true;
     }
+    public void moveDistance(float ScrollAmount)
+    {
+        currentCameraDistance += ScrollAmount * -1f;
+
+        currentCameraDistance = Mathf.Clamp(currentCameraDistance, cameraMinDistance, cameraMaxDistance);
+
+    }
+
 
 
 }
