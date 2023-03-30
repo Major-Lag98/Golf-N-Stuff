@@ -37,7 +37,7 @@ public class LevelData : MonoBehaviour
         // send an update to the hud
         UImanage.UpdatePuttsText(putts);
         // set world score to new updated putts
-        Player.Score += 1;
+         watch.totalScore++ ;
 
 
 
@@ -47,4 +47,12 @@ public class LevelData : MonoBehaviour
     {
         return putts;
     }
+    public void displayResults()
+    {
+            ///disply the end time and make sure that playing ui is not shown
+            UImanage.totalTimeDisplay.SetText(this.Player.amountOfTime);
+            UImanage.displayPlayingUI(false); 
+        
+
+    } 
 }

@@ -151,6 +151,8 @@ public class GameStateMachine : MonoBehaviour
     // set up waiting game state
     public void ToWaiting(bool set )
     {
+        //start stopwatch 
+         watch.time.Start();
         if(set)
         {
             // Play hit sound effect
@@ -169,6 +171,8 @@ public class GameStateMachine : MonoBehaviour
     {
         //disable all objects
         ToSetAimCameraPutter(false,false,false);
+        // disable stopwatch
+        watch.time.Stop(); 
         if(currentState == GameState.END)
         {
             UIManage.DisplayEndUI();

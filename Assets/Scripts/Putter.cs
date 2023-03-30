@@ -13,7 +13,7 @@ public class Putter : MonoBehaviour
     public GameObject Ball;
     public Rigidbody BallRB;
     public Ray ray ; 
-
+    
     public RaycastHit hit ; 
     [SerializeField]private GameStateMachine StateMachine;
     public int scale = 2;
@@ -126,7 +126,7 @@ public class Putter : MonoBehaviour
             StateMachine.set = false ; 
             StateMachine.resetCounter(); 
             StateMachine.ChangeState(GameStateMachine.GameState.WAITING);
-
+            BallRB.velocity  += collision.relativeVelocity; 
         }
 
     
