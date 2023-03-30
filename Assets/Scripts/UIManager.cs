@@ -7,9 +7,9 @@ public class UIManager : MonoBehaviour
 {
     public LevelData Data;
     public TMP_Text NumberOfPuttsDisplay;
-
+    public TMP_Text timerDisplay;
     public TMP_Text ParDisplay;
-
+    public TMP_Text totalTimeDisplay;
     public TMP_Text FinalTermDisplay;
     public TMP_Text PauseTermDisplay;
 
@@ -18,6 +18,18 @@ public class UIManager : MonoBehaviour
     public  GameObject PauseLevelUI;
     public Buttons check; 
 
+    void Start()
+    {
+        
+        timerDisplay.SetText(Data.Player.amountOfTime);
+        displayPlayingUI(true);
+
+    }
+    void Update()
+    {
+        timerDisplay.SetText(Data.Player.amountOfTime); 
+
+    }
     // number of putts should update each stroke
     public void UpdatePuttsText(int strokes)
     {
@@ -65,12 +77,17 @@ public class UIManager : MonoBehaviour
     public void DisplayEndUI()
     {
         SetFinalTermText(Data.GetPutts(), Data.Par);
-   
+        Data.displayResults(); 
         EndLevelUI.SetActive(true);
     }
     public void DisplayPauseUI(bool set )
     { 
         PauseLevelUI.SetActive(set);
+
+    }
+    public void displayPlayingUI(bool set)
+    {
+        PlayingUI.SetActive(set); 
 
     }
 

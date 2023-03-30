@@ -2092,6 +2092,14 @@ PrefabInstance:
       propertyPath: cameraStartingRotationX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5263637444680974377, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+      propertyPath: timerDisplay
+      value: 
+      objectReference: {fileID: 964855831}
+    - target: {fileID: 5263637444680974377, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+      propertyPath: totalTimeDisplay
+      value: 
+      objectReference: {fileID: 964855830}
     - target: {fileID: 5746924189852165054, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2138,6 +2146,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+--- !u!114 &964855830 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4664389679464752926, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+  m_PrefabInstance: {fileID: 964855829}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &964855831 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1541872463511813499, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+  m_PrefabInstance: {fileID: 964855829}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1138932604
 GameObject:
   m_ObjectHideFlags: 0

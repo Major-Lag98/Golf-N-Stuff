@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Diagnostics;
 
 public class MenuSelect : MonoBehaviour
 {
+    
     // the different menus
     public GameObject Main;
     public GameObject LevelSelect;
@@ -14,6 +16,8 @@ public class MenuSelect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        watch.time = new Stopwatch();
+        watch.totalScore = 0 ; 
         SetMenuMain();
 
     }
