@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4106567, g: 0.43504804, b: 0.4439747, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311554, g: 0.38073874, b: 0.3587339, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -328,7 +328,6 @@ MonoBehaviour:
   arrow: 1
   path: 0
   perUnit: 0.05
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!43 &150627155
 Mesh:
   m_ObjectHideFlags: 0
@@ -667,7 +666,6 @@ MonoBehaviour:
   arrow: 1
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1001 &278928632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -851,7 +849,6 @@ MonoBehaviour:
   arrow: 0
   path: 0
   perUnit: 15
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1001 &386808187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1353,7 +1350,6 @@ MonoBehaviour:
   arrow: 1
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!65 &662998523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1485,7 +1481,6 @@ MonoBehaviour:
   arrow: 1
   path: 0
   perUnit: 0.05
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!4 &702070931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 471266, guid: abe17d15a302e1e47bd19a0fa1003d82, type: 3}
@@ -1519,7 +1514,6 @@ MonoBehaviour:
   arrow: 0
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!65 &727906288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1658,7 +1652,6 @@ MonoBehaviour:
   arrow: 0
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!65 &848805618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2087,7 +2080,6 @@ MonoBehaviour:
   arrow: 1
   path: 0
   perUnit: 1
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1 &977635279 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 115824, guid: eedfc38022d5c2b448da45282081269d, type: 3}
@@ -2129,7 +2121,6 @@ MonoBehaviour:
   arrow: 1
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1001 &1130600879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3068,7 +3059,6 @@ MonoBehaviour:
   arrow: 0
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!4 &1630775308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 443236, guid: 8c87accc9ab46ac4a868ff1d801c0718, type: 3}
@@ -3269,7 +3259,6 @@ MonoBehaviour:
   arrow: 0
   path: 0
   perUnit: 5
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1001 &1716026451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3388,7 +3377,6 @@ MonoBehaviour:
   arrow: 0
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1 &1804201327
 GameObject:
   m_ObjectHideFlags: 0
@@ -3475,14 +3463,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804201327}
-  m_LocalRotation: {x: 0.033710323, y: -0.25866136, z: 0.009032652, w: 0.96533746}
+  m_LocalRotation: {x: 0, y: -0.258819, z: 0, w: 0.9659259}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 4, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
 --- !u!4 &1847429559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479024, guid: 9e583c73f8f21d248be83a2fddb607f9, type: 3}
