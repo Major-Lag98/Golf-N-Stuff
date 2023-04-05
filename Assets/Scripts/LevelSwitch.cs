@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class LevelSwitch : MonoBehaviour
 {
-    
-    public string  SceneName; 
+
+    public string  SceneName;
     public void SwitchLevelStr(string  SceneName)
     {
         //Debug.Log("You have clicked the button!");
-        SceneManager.LoadScene(SceneName,LoadSceneMode.Single); 
+        SceneManager.LoadScene(SceneName,LoadSceneMode.Single);
 
     }
 
@@ -22,7 +22,7 @@ public class LevelSwitch : MonoBehaviour
 
     public void SwitchNextLevel()
     {
-        // load next scene by build index      
+        // load next scene by build index
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene( currentSceneIndex + 1);
     }

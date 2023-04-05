@@ -208,6 +208,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level
       objectReference: {fileID: 0}
+    - target: {fileID: 4201324466132248380, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5263637443906274441, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: cameraStartingRotationX
       value: 0
@@ -888,6 +892,26 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
   m_PVRTiledBaking: 0
+--- !u!1 &899493525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5263637445048096249, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+  m_PrefabInstance: {fileID: 44841898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &899493530
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899493525}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c571ccde12083494e9a0b43f90658390, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &966666570
 GameObject:
   m_ObjectHideFlags: 0
