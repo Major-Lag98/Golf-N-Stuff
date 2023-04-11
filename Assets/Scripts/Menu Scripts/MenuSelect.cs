@@ -6,14 +6,29 @@ using System.Diagnostics;
 public class MenuSelect : MonoBehaviour
 {
 
-    // the different menus
+    // Array of all menues
+    public GameObject[] Menues;
+    
+    [Space]
     public GameObject Main;
     public GameObject LevelSelect;
     public GameObject Options;
     public GameObject HelpMenu;
-
+    
+    [Space]
     string outAnimTrigger = "out";
+    // Array of all out animations for main menu
     public Animator[] MainMenuOutAnimations;
+
+    enum Menu 
+    {
+        Main,
+        LevelSelect,
+        Options,
+        Help
+    };
+
+    Menu currentMenu;
 
 
     // Start is called before the first frame update
@@ -23,56 +38,97 @@ public class MenuSelect : MonoBehaviour
         watch.totalScore = 0;
 
         // start off the scene looking at the main menu
-        SetMenuHelper(LevelSelect, Options, HelpMenu, Main);
+        SetMenuHelper(Menu.Main);
 
     }
 
     // set menu to level select
     public void SetMenuLevelSelect()
     {
-        StartCoroutine(ChangeMenuAndWaitForAnim(Main, Options, HelpMenu, LevelSelect));
+        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.LevelSelect));
     }
 
     // set menu to options
     public void SetMenuOptions()
     {
-        StartCoroutine(ChangeMenuAndWaitForAnim(LevelSelect, Main, HelpMenu, Options));
+        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.Options));
     }
 
     // set menu to main
     public void SetMenuMain()
     {
-        StartCoroutine(ChangeMenuAndWaitForAnim(LevelSelect, Options, HelpMenu, Main));
+        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.Main));
     }
 
     // set menu to help menu
     public void SetMenuHelpMenu()
     {
-        StartCoroutine(ChangeMenuAndWaitForAnim(LevelSelect, Main, Options, HelpMenu));
+        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.Help));
     }
 
     // disable the 3 menu objects specified and enable the one you want
-    void SetMenuHelper(GameObject firstDisable, GameObject secondDisable, GameObject thirdDisable, GameObject enable)
+    void SetMenuHelper(Menu goToMenu)
     {
-        // disable the first 3
-        firstDisable.SetActive(false);
-        secondDisable.SetActive(false);
-        thirdDisable.SetActive(false);
+        // first disable all menues
+        Main.SetActive(false);
+        LevelSelect.SetActive(false);
+        HelpMenu.SetActive(false);
+        Options.SetActive(false);
+        
+        // Enable the one needed
+        switch (goToMenu)
+        {
+            case Menu.Main:
+                Main.SetActive(true);
+                break;
+            case Menu.LevelSelect:
+                LevelSelect.SetActive(true);
+                break;
+            case Menu.Help:
+                HelpMenu.SetActive(true);
+                break;
+            case Menu.Options:
+                Options.SetActive(true);
+                break;
+        }
 
-        // enable the last
-        enable.SetActive(true);
+        // set current menu
+        currentMenu = goToMenu;
     }
 
-    IEnumerator ChangeMenuAndWaitForAnim(GameObject firstDisable, GameObject secondDisable, GameObject thirdDisable, GameObject enable)
+    // plays the correct out animation based on the menu passed - only 4 menus
+    void playOutAnimations()
     {
-        // loop through each animation and activate its "out" trigger
-        foreach (Animator animation in MainMenuOutAnimations)
+        // find and set the animations to be played
+        Animator[] animationsToBePlayed;
+        switch(currentMenu)
         {
-            UnityEngine.Debug.Log("Setting out trigger");
+            case Menu.Main:
+                animationsToBePlayed = MainMenuOutAnimations;
+                break;
+            default:
+                animationsToBePlayed = new Animator[0];
+                break;
+        }
+
+        // play out the assigned animations
+        foreach(Animator animation in animationsToBePlayed)
+        {
             animation.SetTrigger(outAnimTrigger);
         }
 
+    }
+
+    // plays out animation, waits for it to finish, then changes menu
+    IEnumerator ChangeMenuAndWaitForAnim(Menu goToMenu)
+    {
+        // loop through each animation and activate its "out" trigger
+        playOutAnimations();
+        
+        // wait for animation to finish
         yield return new WaitForSeconds(0.5f);
-        SetMenuHelper(firstDisable, secondDisable, thirdDisable, enable);
+
+        // change menu
+        SetMenuHelper(goToMenu);
     }
 }
