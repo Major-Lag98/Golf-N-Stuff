@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class LevelSwitch : MonoBehaviour
 {
     
-    public string  SceneName; 
     public void SwitchLevelStr(string  SceneName)
     {
         //Debug.Log("You have clicked the button!");

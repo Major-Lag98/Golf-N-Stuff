@@ -134,15 +134,15 @@ public class MenuSelect : MonoBehaviour
         // wait for animation to finish
         yield return new WaitForSeconds(0.5f);
 
+        // special case if game start
         if (goToMenu == Menu.StartGame)
         {
             // instantiate a level switch to change to level one
-            LevelSwitch LS = new LevelSwitch();
+            LevelSwitch LS = gameObject.AddComponent<LevelSwitch>();
             LS.SwitchNextLevel();
             yield return null;
         }
-
-        // change menu
+        // else change menu
         SetMenuHelper(goToMenu);
     }
 }
