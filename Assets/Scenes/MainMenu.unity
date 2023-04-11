@@ -1449,7 +1449,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 757885196}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StartLevel, Assembly-CSharp
         m_MethodName: StartGolf
         m_Mode: 3
@@ -2814,7 +2814,6 @@ GameObject:
   - component: {fileID: 757885192}
   - component: {fileID: 757885191}
   - component: {fileID: 757885195}
-  - component: {fileID: 757885196}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -2919,6 +2918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf5fe0b012d51d43832407f2aa6add9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Menues: []
   Main: {fileID: 779836262}
   LevelSelect: {fileID: 1472440934}
   Options: {fileID: 1201085359}
@@ -2930,18 +2930,6 @@ MonoBehaviour:
   - {fileID: 330888998}
   - {fileID: 234657886}
   - {fileID: 892829229}
---- !u!114 &757885196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 757885189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 936a15bd1a7d7d34d990239391fcf477, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &759959378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3221,7 +3209,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 757885196}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StartLevel, Assembly-CSharp
         m_MethodName: StartGolf
         m_Mode: 3
@@ -5648,10 +5636,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 757885196}
-        m_TargetAssemblyTypeName: StartLevel, Assembly-CSharp
-        m_MethodName: StartGolf
-        m_Mode: 3
+      - m_Target: {fileID: 757885195}
+        m_TargetAssemblyTypeName: MenuSelect, Scripts
+        m_MethodName: SetMenuStartGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5764,7 +5752,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 757885196}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StartLevel, Assembly-CSharp
         m_MethodName: StartGolf
         m_Mode: 3
