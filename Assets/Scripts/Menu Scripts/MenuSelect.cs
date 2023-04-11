@@ -22,6 +22,7 @@ public class MenuSelect : MonoBehaviour
 
     enum Menu 
     {
+        StartGame,
         Main,
         LevelSelect,
         Options,
@@ -40,6 +41,11 @@ public class MenuSelect : MonoBehaviour
         // start off the scene looking at the main menu
         SetMenuHelper(Menu.Main);
 
+    }
+
+    public void SetMenuStartGame()
+    {
+        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.StartGame));
     }
 
     // set menu to level select
@@ -127,6 +133,14 @@ public class MenuSelect : MonoBehaviour
         
         // wait for animation to finish
         yield return new WaitForSeconds(0.5f);
+
+        if (goToMenu == Menu.StartGame)
+        {
+            // instantiate a level switch to change to level one
+            LevelSwitch LS = new LevelSwitch();
+            LS.SwitchNextLevel();
+            yield return null;
+        }
 
         // change menu
         SetMenuHelper(goToMenu);
