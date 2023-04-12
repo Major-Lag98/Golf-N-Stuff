@@ -20,6 +20,8 @@ public class MenuSelect : MonoBehaviour
     // Array of all out animations for main menu
     public Animator[] MainMenuOutAnimations;
 
+    public Animator[] OptionsOutAnimations;
+
     enum Menu 
     {
         StartGame,
@@ -111,6 +113,9 @@ public class MenuSelect : MonoBehaviour
         {
             case Menu.Main:
                 animationsToBePlayed = MainMenuOutAnimations;
+                break;
+            case Menu.Options:
+                animationsToBePlayed = OptionsOutAnimations;
                 break;
             default:
                 animationsToBePlayed = new Animator[0];
