@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2028,6 +2028,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9207965687588392289, guid: d831ece85a6c5074aa3eacfea109dc8e, type: 3}
   m_PrefabInstance: {fileID: 800929762}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1416703609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5263637443906274440, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+  m_PrefabInstance: {fileID: 44841898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!45 &1416703612
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416703609}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 1715577967ac77f4c8d5d2a157dec934, type: 2}
 --- !u!1001 &1421571708
 PrefabInstance:
   m_ObjectHideFlags: 0
