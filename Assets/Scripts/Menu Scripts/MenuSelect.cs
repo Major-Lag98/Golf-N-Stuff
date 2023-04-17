@@ -11,24 +11,24 @@ public class MenuSelect : MonoBehaviour
     
     [Space]
     public GameObject Main;
-    public GameObject LevelSelect;
+    //public GameObject LevelSelect;
     public GameObject Options;
-    public GameObject HelpMenu;
+    public GameObject Credits;
     
     [Space]
     string outAnimTrigger = "out";
     // Array of all out animations for main menu
     public Animator[] MainMenuOutAnimations;
-
     public Animator[] OptionsOutAnimations;
+    public Animator[] CreditsOutAnimations;
 
     enum Menu 
     {
         StartGame,
         Main,
-        LevelSelect,
+        //LevelSelect,
         Options,
-        Help
+        Credits
     };
 
     Menu currentMenu;
@@ -50,11 +50,11 @@ public class MenuSelect : MonoBehaviour
         StartCoroutine(ChangeMenuAndWaitForAnim(Menu.StartGame));
     }
 
-    // set menu to level select
+    /*// set menu to level select
     public void SetMenuLevelSelect()
     {
         StartCoroutine(ChangeMenuAndWaitForAnim(Menu.LevelSelect));
-    }
+    }*/
 
     // set menu to options
     public void SetMenuOptions()
@@ -71,7 +71,7 @@ public class MenuSelect : MonoBehaviour
     // set menu to help menu
     public void SetMenuHelpMenu()
     {
-        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.Help));
+        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.Credits));
     }
 
     // disable the 3 menu objects specified and enable the one you want
@@ -79,8 +79,8 @@ public class MenuSelect : MonoBehaviour
     {
         // first disable all menues
         Main.SetActive(false);
-        LevelSelect.SetActive(false);
-        HelpMenu.SetActive(false);
+        //LevelSelect.SetActive(false);
+        Credits.SetActive(false);
         Options.SetActive(false);
         
         // Enable the one needed
@@ -89,11 +89,11 @@ public class MenuSelect : MonoBehaviour
             case Menu.Main:
                 Main.SetActive(true);
                 break;
-            case Menu.LevelSelect:
+            /*case Menu.LevelSelect:
                 LevelSelect.SetActive(true);
-                break;
-            case Menu.Help:
-                HelpMenu.SetActive(true);
+                break;*/
+            case Menu.Credits:
+                Credits.SetActive(true);
                 break;
             case Menu.Options:
                 Options.SetActive(true);
@@ -116,6 +116,9 @@ public class MenuSelect : MonoBehaviour
                 break;
             case Menu.Options:
                 animationsToBePlayed = OptionsOutAnimations;
+                break;
+            case Menu.Credits:
+                animationsToBePlayed = CreditsOutAnimations;
                 break;
             default:
                 animationsToBePlayed = new Animator[0];
