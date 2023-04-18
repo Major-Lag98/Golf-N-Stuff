@@ -4126,7 +4126,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: KENDAL
+  m_text: 'KENDALL
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48412fcb6aec84940870268d90b4950f, type: 2}
   m_sharedMaterial: {fileID: -7079700008599258750, guid: 48412fcb6aec84940870268d90b4950f, type: 2}
@@ -4540,7 +4542,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: THOMAS
+  m_text: TOMAS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48412fcb6aec84940870268d90b4950f, type: 2}
   m_sharedMaterial: {fileID: -7079700008599258750, guid: 48412fcb6aec84940870268d90b4950f, type: 2}
