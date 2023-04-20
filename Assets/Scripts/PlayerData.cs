@@ -4,17 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Diagnostics;
+using UnityEngine.SceneManagement;
 
 public class PlayerData : MonoBehaviour
 {
-
+    // determin if the player started from the beginning "a countable run" or
+    // from the level select
+    public bool CountableRun = false;
     // set up stopwatch to string
     [HideInInspector]public TimeSpan clock ;
-    [HideInInspector]public string amountOfTime ; 
-    [HideInInspector]public int score = 0  ; 
-
+    public string amountOfTime ; 
+ 
     void Start()
     {
+        Scene scene = SceneManager.GetActiveScene();
         //set stop watch at the first frame 
         watch.time.Start();
     }
