@@ -11,10 +11,11 @@ public class LevelData : MonoBehaviour
 
     public PlayerData Player;
 
+
     // mark if this level is the last of the game
     public bool FinalHole = false;
 
-    int putts = 0;
+    public int Putts = 0;
 
     public int Par;
 
@@ -22,7 +23,7 @@ public class LevelData : MonoBehaviour
     {
         Player = GameObject.FindObjectOfType<PlayerData>();
         // Zero Putt Display
-        UImanage.UpdatePuttsText(putts);
+        UImanage.UpdatePuttsText(Putts);
         // update the Par display on the screen at the start of the level
         UImanage.SetParText(Par);
 
@@ -30,22 +31,22 @@ public class LevelData : MonoBehaviour
 
     public void AddPutt()
     {
-        putts++;
+        Putts++;
 
         //Debug.Log(putts);
 
         // send an update to the hud
-        UImanage.UpdatePuttsText(putts);
+        UImanage.UpdatePuttsText(Putts);
         // set world score to new updated putts
          watch.totalScore++ ;
-
+        
 
 
     }
 
     public int GetPutts()
     {
-        return putts;
+        return Putts;
     }
     public void displayResults()
     {
