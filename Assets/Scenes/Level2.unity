@@ -547,6 +547,10 @@ PrefabInstance:
       propertyPath: cameraStartingRotationX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5263637444680974376, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+      propertyPath: m_Name
+      value: UI
+      objectReference: {fileID: 0}
     - target: {fileID: 5263637444680974377, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: timerDisplay
       value: 
@@ -725,7 +729,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25542
+  m_Name: pb_Mesh33244
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
