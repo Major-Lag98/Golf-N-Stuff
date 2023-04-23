@@ -783,9 +783,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5263637444015746889}
-        m_TargetAssemblyTypeName: LevelSwitch, Assembly-CSharp
-        m_MethodName: SwitchLevelStr
-        m_Mode: 5
+        m_TargetAssemblyTypeName: LevelSwitch, Scripts
+        m_MethodName: SwitchLevelInt
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6387,7 +6387,7 @@ PrefabInstance:
     - target: {fileID: 5520219390223783593, guid: 52a9547371646a3408583cd287b94f45, type: 3}
       propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 5263637444806311803}
+      objectReference: {fileID: 0}
     - target: {fileID: 5520219390223783593, guid: 52a9547371646a3408583cd287b94f45, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6486,17 +6486,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52a9547371646a3408583cd287b94f45, type: 3}
---- !u!114 &5263637444806311803 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5520219390223783592, guid: 52a9547371646a3408583cd287b94f45, type: 3}
-  m_PrefabInstance: {fileID: 403054675405629907}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5263637445495813491 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5520219390913813664, guid: 52a9547371646a3408583cd287b94f45, type: 3}

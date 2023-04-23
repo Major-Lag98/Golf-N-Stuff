@@ -20,7 +20,7 @@ public class TransitionAnimation : MonoBehaviour
 
     public void DeleteSelf()
     {
-        Destroy(this);
+        Destroy(this.gameObject);
     }
 
     
