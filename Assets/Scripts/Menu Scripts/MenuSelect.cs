@@ -5,6 +5,12 @@ using System.Diagnostics;
 
 public class MenuSelect : MonoBehaviour
 {
+
+    // Array of all menues
+    public GameObject[] Menues;
+
+    // canvas transitioner for start game button
+    public GameObject TransitionCanvas;
     
     // the different menus
     public GameObject Main;
@@ -65,5 +71,86 @@ public class MenuSelect : MonoBehaviour
       // enable help menu
       HelpMenu.SetActive(true);
    }
+
+    // disable the 3 menu objects specified and enable the one you want
+    void SetMenuHelper(Menu goToMenu)
+    {
+        // first disable all menues
+        Main.SetActive(false);
+        //LevelSelect.SetActive(false);
+        Credits.SetActive(false);
+        Options.SetActive(false);
+        
+        // Enable the one needed
+        switch (goToMenu)
+        {
+            case Menu.Main:
+                Main.SetActive(true);
+                break;
+            /*case Menu.LevelSelect:
+                LevelSelect.SetActive(true);
+                break;*/
+            case Menu.Credits:
+                Credits.SetActive(true);
+                break;
+            case Menu.Options:
+                Options.SetActive(true);
+                break;
+        }
+
+        // set current menu
+        currentMenu = goToMenu;
+    }
+
+    // plays the correct out animation based on the menu passed - only 4 menus
+    void playOutAnimations()
+    {
+        // find and set the animations to be played
+        Animator[] animationsToBePlayed;
+        switch(currentMenu)
+        {
+            case Menu.Main:
+                animationsToBePlayed = MainMenuOutAnimations;
+                break;
+            case Menu.Options:
+                animationsToBePlayed = OptionsOutAnimations;
+                break;
+            case Menu.Credits:
+                animationsToBePlayed = CreditsOutAnimations;
+                break;
+            default:
+                animationsToBePlayed = new Animator[0];
+                break;
+        }
+
+        // play out the assigned animations
+        foreach(Animator animation in animationsToBePlayed)
+        {
+            animation.SetTrigger(outAnimTrigger);
+        }
+
+    }
+
+    // plays out animation, waits for it to finish, then changes menu
+    IEnumerator ChangeMenuAndWaitForAnim(Menu goToMenu)
+    {
+        // loop through each animation and activate its "out" trigger
+        playOutAnimations();
+        
+        // wait for animation to finish
+        yield return new WaitForSeconds(0.5f);
+
+        // special case if game start
+        if (goToMenu == Menu.StartGame)
+        {
+            // instantiate a level switch to change to level one
+            LevelSwitch LS = gameObject.AddComponent<LevelSwitch>();
+            LS.TransitionCanvas = TransitionCanvas;
+            LS.SwitchNextLevel();
+            yield return null;
+        }
+        // else change menu
+        SetMenuHelper(goToMenu);
+    }
 
 }

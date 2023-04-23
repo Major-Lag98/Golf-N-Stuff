@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: UrbanSketchArtMainMenuButtons
+  m_Name: UrMainMenuButtons
   m_EditorClassIdentifier: 
   hashCode: 969328274
   material: {fileID: -1929223349390558110}
