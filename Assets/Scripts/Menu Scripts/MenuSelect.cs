@@ -11,66 +11,71 @@ public class MenuSelect : MonoBehaviour
 
     // canvas transitioner for start game button
     public GameObject TransitionCanvas;
-    
-    // the different menus
+
+    [Space]
     public GameObject Main;
-    public GameObject LevelSelect;
+    //public GameObject LevelSelect;
     public GameObject Options;
-    public GameObject HelpMenu;
+    public GameObject Credits;
+
+    [Space]
+    string outAnimTrigger = "out";
+    // Array of all out animations for main menu
+    public Animator[] MainMenuOutAnimations;
+    public Animator[] OptionsOutAnimations;
+    public Animator[] CreditsOutAnimations;
+
+    enum Menu
+    {
+        StartGame,
+        Main,
+        //LevelSelect,
+        Options,
+        Credits
+    };
+
+    Menu currentMenu;
 
 
     // Start is called before the first frame update
     void Start()
     {
         watch.time = new Stopwatch();
-        watch.totalScore = 0 ; 
-        SetMenuMain();
+        watch.totalScore = 0;
+
+        // start off the scene looking at the main menu
+        SetMenuHelper(Menu.Main);
 
     }
 
-    // set menu to level select
+    public void SetMenuStartGame()
+    {
+        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.StartGame));
+    }
+
+    /*// set menu to level select
     public void SetMenuLevelSelect()
     {
-        // disable both Options, Help, and Main
-        Main.SetActive(false);
-        Options.SetActive(false);
-        HelpMenu.SetActive(false);
-        // enable Select Level
-        LevelSelect.SetActive(true);
-    }
+        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.LevelSelect));
+    }*/
 
     // set menu to options
     public void SetMenuOptions()
     {
-        // disable both Main, help, and select
-        LevelSelect.SetActive(false);
-        Main.SetActive(false);
-        HelpMenu.SetActive(false);
-        // enable Options
-        Options.SetActive(true);
+        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.Options));
     }
 
     // set menu to main
     public void SetMenuMain()
     {
-        // disable both Options and select
-        LevelSelect.SetActive(false);
-        Options.SetActive(false);
-        HelpMenu.SetActive(false);
-        // enable Main
-        Main.SetActive(true);
+        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.Main));
     }
 
     // set menu to help menu
     public void SetMenuHelpMenu()
     {
-      // disable main, options, and select
-      LevelSelect.SetActive(false);
-      Main.SetActive(false);
-      Options.SetActive(false);
-      // enable help menu
-      HelpMenu.SetActive(true);
-   }
+        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.Credits));
+    }
 
     // disable the 3 menu objects specified and enable the one you want
     void SetMenuHelper(Menu goToMenu)
@@ -80,7 +85,7 @@ public class MenuSelect : MonoBehaviour
         //LevelSelect.SetActive(false);
         Credits.SetActive(false);
         Options.SetActive(false);
-        
+
         // Enable the one needed
         switch (goToMenu)
         {
@@ -107,7 +112,7 @@ public class MenuSelect : MonoBehaviour
     {
         // find and set the animations to be played
         Animator[] animationsToBePlayed;
-        switch(currentMenu)
+        switch (currentMenu)
         {
             case Menu.Main:
                 animationsToBePlayed = MainMenuOutAnimations;
@@ -124,7 +129,7 @@ public class MenuSelect : MonoBehaviour
         }
 
         // play out the assigned animations
-        foreach(Animator animation in animationsToBePlayed)
+        foreach (Animator animation in animationsToBePlayed)
         {
             animation.SetTrigger(outAnimTrigger);
         }
@@ -136,7 +141,7 @@ public class MenuSelect : MonoBehaviour
     {
         // loop through each animation and activate its "out" trigger
         playOutAnimations();
-        
+
         // wait for animation to finish
         yield return new WaitForSeconds(0.5f);
 
@@ -152,5 +157,4 @@ public class MenuSelect : MonoBehaviour
         // else change menu
         SetMenuHelper(goToMenu);
     }
-
 }
