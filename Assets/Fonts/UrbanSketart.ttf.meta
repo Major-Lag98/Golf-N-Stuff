@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bed556f2c68208340b0a40d011c6ea07
+guid: 1e095bb7e17253b4aaaa6058b5953d4b
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -10,7 +10,8 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Urban Sketart
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: bed556f2c68208340b0a40d011c6ea07, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

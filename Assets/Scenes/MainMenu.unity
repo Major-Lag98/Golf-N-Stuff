@@ -1428,8 +1428,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Golf-N-Stuff
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 48412fcb6aec84940870268d90b4950f, type: 2}
-  m_sharedMaterial: {fileID: -7079700008599258750, guid: 48412fcb6aec84940870268d90b4950f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e83f6b58a543389499219cb02a9aab22, type: 2}
+  m_sharedMaterial: {fileID: 1319948070347662444, guid: e83f6b58a543389499219cb02a9aab22, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

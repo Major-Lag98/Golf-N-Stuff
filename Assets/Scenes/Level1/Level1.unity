@@ -204,37 +204,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1541872463511813499, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -2986766975212926625, guid: eef1730d1f4f69847b3664025c2b7063, type: 2}
-    - target: {fileID: 1541872463511813499, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2685527479721459663, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_Name
       value: Level
-      objectReference: {fileID: 0}
-    - target: {fileID: 5263637443906274441, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-      propertyPath: cameraMinAngle
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5263637443906274441, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-      propertyPath: cameraStartingDistance
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5263637443906274441, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-      propertyPath: cameraStartingRotationX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5263637443906274441, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-      propertyPath: cameraStartingRotationY
-      value: 22.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5263637444843269523, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5746924189852165054, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_RootOrder
@@ -2291,20 +2263,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9207965687588392289, guid: d831ece85a6c5074aa3eacfea109dc8e, type: 3}
   m_PrefabInstance: {fileID: 800929762}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1416703609 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5263637443906274440, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-  m_PrefabInstance: {fileID: 44841898}
-  m_PrefabAsset: {fileID: 0}
---- !u!45 &1416703612
-Skybox:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416703609}
-  m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 1715577967ac77f4c8d5d2a157dec934, type: 2}
 --- !u!1001 &1421571708
 PrefabInstance:
   m_ObjectHideFlags: 0
