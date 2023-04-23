@@ -12,70 +12,65 @@ public class MenuSelect : MonoBehaviour
     // canvas transitioner for start game button
     public GameObject TransitionCanvas;
     
-    [Space]
+    // the different menus
     public GameObject Main;
-    //public GameObject LevelSelect;
+    public GameObject LevelSelect;
     public GameObject Options;
-    public GameObject Credits;
-    
-    [Space]
-    string outAnimTrigger = "out";
-    // Array of all out animations for main menu
-    public Animator[] MainMenuOutAnimations;
-    public Animator[] OptionsOutAnimations;
-    public Animator[] CreditsOutAnimations;
-
-    enum Menu 
-    {
-        StartGame,
-        Main,
-        //LevelSelect,
-        Options,
-        Credits
-    };
-
-    Menu currentMenu;
+    public GameObject HelpMenu;
 
 
     // Start is called before the first frame update
     void Start()
     {
         watch.time = new Stopwatch();
-        watch.totalScore = 0;
-
-        // start off the scene looking at the main menu
-        SetMenuHelper(Menu.Main);
+        watch.totalScore = 0 ; 
+        SetMenuMain();
 
     }
 
-    public void SetMenuStartGame()
-    {
-        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.StartGame));
-    }
-
-    /*// set menu to level select
+    // set menu to level select
     public void SetMenuLevelSelect()
     {
-        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.LevelSelect));
-    }*/
+        // disable both Options, Help, and Main
+        Main.SetActive(false);
+        Options.SetActive(false);
+        HelpMenu.SetActive(false);
+        // enable Select Level
+        LevelSelect.SetActive(true);
+    }
 
     // set menu to options
     public void SetMenuOptions()
     {
-        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.Options));
+        // disable both Main, help, and select
+        LevelSelect.SetActive(false);
+        Main.SetActive(false);
+        HelpMenu.SetActive(false);
+        // enable Options
+        Options.SetActive(true);
     }
 
     // set menu to main
     public void SetMenuMain()
     {
-        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.Main));
+        // disable both Options and select
+        LevelSelect.SetActive(false);
+        Options.SetActive(false);
+        HelpMenu.SetActive(false);
+        // enable Main
+        Main.SetActive(true);
     }
 
     // set menu to help menu
     public void SetMenuHelpMenu()
     {
-        StartCoroutine(ChangeMenuAndWaitForAnim(Menu.Credits));
-    }
+      // disable main, options, and select
+      LevelSelect.SetActive(false);
+      Main.SetActive(false);
+      Options.SetActive(false);
+      // enable help menu
+      HelpMenu.SetActive(true);
+   }
 
     // disable the 3 menu objects specified and enable the one you want
     void SetMenuHelper(Menu goToMenu)
@@ -157,4 +152,5 @@ public class MenuSelect : MonoBehaviour
         // else change menu
         SetMenuHelper(goToMenu);
     }
+
 }

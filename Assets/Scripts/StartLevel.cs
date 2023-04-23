@@ -8,6 +8,11 @@ public class StartLevel : MonoBehaviour
     
     public void StartGolf(int index)
     {
+        if (index == 1)
+        {
+            watch.CountableRun = true;
+        }
+
         SceneManager.LoadScene(index);
     }
 
