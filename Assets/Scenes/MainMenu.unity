@@ -3513,6 +3513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menues: []
+  TransitionCanvas: {fileID: 929282285209475199, guid: d030a67c07e71d24893cb7fe2eed699f, type: 3}
   Main: {fileID: 779836262}
   Options: {fileID: 1201085359}
   Credits: {fileID: 2112654588}

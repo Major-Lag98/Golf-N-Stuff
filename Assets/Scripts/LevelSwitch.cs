@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelSwitch : MonoBehaviour
 {
+
+    public GameObject TransitionCanvas;
+
     
     public void SwitchLevelStr(string  SceneName)
     {
@@ -21,8 +24,25 @@ public class LevelSwitch : MonoBehaviour
 
     public void SwitchNextLevel()
     {
+        // spawn the transition gameobject
+        Instantiate(TransitionCanvas);
+        StartCoroutine(WaitForAnimation());
+    }
+
+    private void loadNextSceneIndex()
+    {
         // load next scene by build index      
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene( currentSceneIndex + 1);
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
+
+
+    IEnumerator WaitForAnimation()
+    {
+        // wait for middle of transition animation
+        yield return new WaitForSeconds(1.5f);
+        // load next scene
+        loadNextSceneIndex();
+    }
+
 }

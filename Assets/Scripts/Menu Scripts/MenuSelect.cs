@@ -8,6 +8,9 @@ public class MenuSelect : MonoBehaviour
 
     // Array of all menues
     public GameObject[] Menues;
+
+    // canvas transitioner for start game button
+    public GameObject TransitionCanvas;
     
     [Space]
     public GameObject Main;
@@ -147,6 +150,7 @@ public class MenuSelect : MonoBehaviour
         {
             // instantiate a level switch to change to level one
             LevelSwitch LS = gameObject.AddComponent<LevelSwitch>();
+            LS.TransitionCanvas = TransitionCanvas;
             LS.SwitchNextLevel();
             yield return null;
         }
