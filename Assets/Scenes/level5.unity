@@ -328,7 +328,6 @@ MonoBehaviour:
   arrow: 1
   path: 0
   perUnit: 0.05
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!43 &150627155
 Mesh:
   m_ObjectHideFlags: 0
@@ -667,7 +666,6 @@ MonoBehaviour:
   arrow: 1
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1001 &278928632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -851,7 +849,6 @@ MonoBehaviour:
   arrow: 0
   path: 0
   perUnit: 15
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1001 &386808187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1353,7 +1350,6 @@ MonoBehaviour:
   arrow: 1
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!65 &662998523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1485,7 +1481,6 @@ MonoBehaviour:
   arrow: 1
   path: 0
   perUnit: 0.05
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!4 &702070931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 471266, guid: abe17d15a302e1e47bd19a0fa1003d82, type: 3}
@@ -1519,7 +1514,6 @@ MonoBehaviour:
   arrow: 0
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!65 &727906288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1658,7 +1652,6 @@ MonoBehaviour:
   arrow: 0
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!65 &848805618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2087,7 +2080,6 @@ MonoBehaviour:
   arrow: 1
   path: 0
   perUnit: 1
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1 &977635279 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 115824, guid: eedfc38022d5c2b448da45282081269d, type: 3}
@@ -2129,7 +2121,6 @@ MonoBehaviour:
   arrow: 1
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1001 &1130600879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3068,7 +3059,6 @@ MonoBehaviour:
   arrow: 0
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!4 &1630775308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 443236, guid: 8c87accc9ab46ac4a868ff1d801c0718, type: 3}
@@ -3269,7 +3259,6 @@ MonoBehaviour:
   arrow: 0
   path: 0
   perUnit: 5
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1001 &1716026451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3388,7 +3377,6 @@ MonoBehaviour:
   arrow: 0
   path: 1
   perUnit: 30
-  createdVelo: {x: 0, y: 0, z: 0}
 --- !u!1 &1804201327
 GameObject:
   m_ObjectHideFlags: 0
@@ -4111,6 +4099,10 @@ PrefabInstance:
     - target: {fileID: 2685527479721459663, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_Name
       value: Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263637443906274441, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+      propertyPath: cameraStartingRotationX
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 5263637444302078315, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_LocalPosition.y
