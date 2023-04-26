@@ -108,9 +108,22 @@ public class GameStateMachine : MonoBehaviour
             // if we are not moving for x amount of time
             if (WaitIdleTime > WaitIdleTimeMax)
             {
-                // change to aiming
-                ChangeState(GameState.AIMIMG);
-                resetCounter();
+                //create a raycast
+                RaycastHit hit;
+                // cast the ray downward at least 1 meter and record the first hit
+                Physics.Raycast(PutterObject.Ball.transform.position, Vector3.down, out hit, 1);
+                // if we hit anything but the track reset the ball
+                if (hit.transform.tag != "Track")
+                {
+                    PutterObject.ResetGolfBall(PutterObject.BallPrevPos);
+                }
+                else
+                {
+                    // change to aiming
+                    ChangeState(GameState.AIMIMG);
+                    resetCounter();
+                }
+                
             }
         }
         else
