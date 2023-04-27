@@ -1,14 +1,14 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
+/*using System.Collections.Generic;
 using System.Security.Cryptography;
-using System.Text.RegularExpressions;
+using System.Text.RegularExpressions;*/
 using UnityEngine.Networking;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+/*using UnityEngine.UI;
 using JetBrains.Annotations;
-using MacFsWatcher;
+using MacFsWatcher;*/
 
 public class ScoreboardTable : MonoBehaviour
 {
