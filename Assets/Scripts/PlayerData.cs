@@ -26,7 +26,7 @@ public class PlayerData : MonoBehaviour
     {
         //display time span as as string 
         clock = watch.time.Elapsed ; 
-        amountOfTime =watch.time.Elapsed.ToString (@"mm\:ss\:fff");      
+        amountOfTime =watch.time.Elapsed.ToString (@"mm\:ss\:ff");      
     }
     
 

@@ -59,9 +59,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Numbers
   m_EditorClassIdentifier: 
-  hashCode: 362211070
+  hashCode: 1873747376
   material: {fileID: 5239606151196740835}
-  materialHashCode: 1279299998
+  materialHashCode: 1834390928
   m_Version: 1.1.0
   m_SourceFontFileGUID: 1e095bb7e17253b4aaaa6058b5953d4b
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 1e095bb7e17253b4aaaa6058b5953d4b, type: 3}
@@ -369,6 +369,20 @@ MonoBehaviour:
       m_Height: 67
     m_Scale: 1
     m_AtlasIndex: 0
+  - m_Index: 3
+    m_Metrics:
+      m_Width: 0
+      m_Height: 0
+      m_HorizontalBearingX: 0
+      m_HorizontalBearingY: 0
+      m_HorizontalAdvance: 0
+    m_GlyphRect:
+      m_X: 0
+      m_Y: 0
+      m_Width: 0
+      m_Height: 0
+    m_Scale: 1
+    m_AtlasIndex: 0
   m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 32
@@ -449,6 +463,10 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 49
     m_GlyphIndex: 22
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 10
+    m_GlyphIndex: 3
     m_Scale: 1
   m_AtlasTextures:
   - {fileID: -2270130594194818438}
@@ -714,7 +732,7 @@ Material:
     - _ColorMask: 15
     - _CullMode: 0
     - _Diffuse: 0.5
-    - _FaceDilate: 0.27
+    - _FaceDilate: 1
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
     - _GlowInner: 0.05
@@ -728,12 +746,12 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0.222
+    - _OutlineWidth: 0.597
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 0.9
-    - _ScaleRatioB: 0.48824996
-    - _ScaleRatioC: 0.48824996
+    - _ScaleRatioA: 0.504343
+    - _ScaleRatioB: 0
+    - _ScaleRatioC: 0
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
