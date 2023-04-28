@@ -8,9 +8,6 @@ TagManager:
   - Ramp
   - Block
   - GameMusic
-  - Track
-  - username
-  - Clone
   layers:
   - Default
   - TransparentFX

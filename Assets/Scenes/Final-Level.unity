@@ -4308,18 +4308,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 5263637444074645557, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5263637444074645557, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SwitchNextLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5263637444074645559, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-      propertyPath: m_Name
-      value: ScoreboardBTN
-      objectReference: {fileID: 0}
     - target: {fileID: 5263637444302078315, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_LocalPosition.y
       value: -270
@@ -4331,10 +4319,6 @@ PrefabInstance:
     - target: {fileID: 5263637444302078316, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5263637444313334497, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
-      propertyPath: m_text
-      value: Results
       objectReference: {fileID: 0}
     - target: {fileID: 5263637444631536498, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_IsActive
