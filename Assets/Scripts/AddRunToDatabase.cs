@@ -16,7 +16,7 @@ public class AddRunToDatabase : MonoBehaviour
     void createCompleteURL() // also int time when the time comes
     {
         completeURL = defaultURL + "?username=" + input + "&score=" + watch.totalScore.ToString() +
-                                                          "&time=" + watch.timeString;
+                                                          "&time=" + watch.timeString + "&key=golfing-n-stuffing";
 
     }
 
