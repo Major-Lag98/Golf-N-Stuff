@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class AddRunToDatabase : MonoBehaviour
 {
-    public string defaultURL = "http://localhost:8000/addPlayerData.php/";
+    public string defaultURL = "http://142.11.252.18:8080/addPlayerData.php/";
 
     public string input;
     public string completeURL;
