@@ -14,9 +14,9 @@ public class ScoreboardTable : MonoBehaviour
 {
     private Transform entryContainer;
     private Transform entryTemplate;
-    private string scoreURL = "http://localhost:8000/displayScore.php";
-    private string timeURL = "http://localhost:8000/displayTime.php";
-    private string URL = "http://localhost:8000/displayScore.php";
+    private string scoreURL = "http://142.11.252.18:8080/displayScore.php";
+    private string timeURL = "http://142.11.252.18:8080/displayTime.php";
+    private string URL = "http://142.11.252.18:8080/displayScore.php";
     private string nameResultText;
     private string scoreResultText;
     private string timeResultText;

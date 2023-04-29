@@ -14,18 +14,12 @@ public class EndMenuControl : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        if (watch.CountableRun)
-        {
+        
             InputField.SetActive(true);
             Success.SetActive(false);
             Invalid.SetActive(false);
-        }
-        else
-        {
-            InputField.SetActive(false);
-            Success.SetActive(false);
-            Invalid.SetActive(true);
-        }
+        
+        
         
     }
 
