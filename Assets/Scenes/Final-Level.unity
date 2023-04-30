@@ -1287,7 +1287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193026, guid: 03f51df302bf56f449b2ae3abd99aeee, type: 3}
       propertyPath: m_TagString
-      value: Ramp
+      value: Track
       objectReference: {fileID: 0}
     - target: {fileID: 427574, guid: 03f51df302bf56f449b2ae3abd99aeee, type: 3}
       propertyPath: m_RootOrder
@@ -4336,6 +4336,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Results
       objectReference: {fileID: 0}
+    - target: {fileID: 5263637444313334497, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+      propertyPath: m_fontSize
+      value: 39.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263637444313334497, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 39.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5263637444631536498, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4350,7 +4358,7 @@ PrefabInstance:
       objectReference: {fileID: 665591869}
     - target: {fileID: 5263637444843269523, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5263637445048096246, guid: 43d5269c40abacf46996e8b1ba4379a7, type: 3}
       propertyPath: m_AnchoredPosition.y
